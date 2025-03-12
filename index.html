@@ -14,17 +14,24 @@
     <main>
         <section id="bio">
             <h2>About Me</h2>
-            <p>Hi! 👋 I'm Diego, AI Director @ Moody's Local.
-I'm a Machine Learning practitioner and researcher bridging AI with Finance, Biotech, and Education. Alumnus of Singularity University and former Data Science for Social Good (DSSG) Fellow at the German Research Center for Artificial Intelligence (DFKI). Currently conducting AI research at Argentina's National Technological University (UTN).
-I leverage Artificial Intelligence to accelerate human development and reduce societal inequalities, designing solutions that address real-world challenges.</p>
+            <p>I specialize in AI, Data Science, and Computer Vision, focusing on practical applications and research. 
+            This site showcases my technical writings on various AI topics, including Machine Learning, NLP, 
+            and Geospatial Analysis.</p>
         </section>
         <section id="articles">
             <h2>Technical Articles</h2>
-            <div id="article-categories"></div>
+            <label for="category-filter">Filter by category:</label>
+            <select id="category-filter">
+                <option value="all">All</option>
+                <option value="NLP">NLP</option>
+                <option value="Graphs">Graphs</option>
+                <option value="Machine Learning">Machine Learning</option>
+            </select>
+            <ul id="article-list"></ul>
         </section>
     </main>
     <footer>
-        <p>Diego López Yse</p>
+        <p>&copy; 2025 Diego López Yse</p>
     </footer>
     <script src="script.js"></script>
 </body>
