@@ -23,6 +23,7 @@ header {
     width: 80%;
     max-width: 1200px;
     margin: 20px auto;
+    align-items: flex-start;
 }
 
 /* Sidebar */
@@ -32,6 +33,7 @@ header {
     background: #f4f4f4;
     border-radius: 10px;
     margin-right: 20px;
+    flex-shrink: 0;
 }
 
 #sidebar h3 {
@@ -47,6 +49,7 @@ header {
 /* Articles Section */
 #articles {
     flex-grow: 1;
+    max-width: calc(100% - 270px);
 }
 
 #article-list {
@@ -77,12 +80,3 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     #content-wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #sidebar {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-}
