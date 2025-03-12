@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diego López Yse - My Articles</title>
+    <title>Diego López Yse - Technical Articles</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,27 +14,26 @@
     <main>
         <section id="bio">
             <h2>About This Site</h2>
-            <p>This site lists my writings on various AI topics, including Machine Learning, NLP, Graphs, and more.</p>
+            <p>This site lists my writings on various AI topics, including Machine Learning, NLP, Graphs, and more</p>
         </section>
-        <div id="content-wrapper">
-            <aside id="sidebar">
-                <h3>Filter by category</h3>
-                <select id="category-filter">
-                    <option value="all">All</option>
-                    <option value="NLP">NLP</option>
-                    <option value="Graphs">Graphs</option>
-                    <option value="Machine Learning">Machine Learning</option>
-                </select>
-            </aside>
-            <section id="articles">
-                <h2>Technical Articles</h2>
-                <ul id="article-list"></ul>
-            </section>
+        <div id="filter-container" style="text-align: center; margin-bottom: 15px;">
+            <label for="category-filter"><strong>Filter by category:</strong></label>
+            <select id="category-filter" style="margin-left: 10px; padding: 5px;">
+                <option value="all">All</option>
+                <option value="NLP">NLP</option>
+                <option value="Graphs">Graphs</option>
+                <option value="Machine Learning">Machine Learning</option>
+            </select>
         </div>
+        <section id="articles">
+            <h2>My Articles</h2>
+            <ul id="article-list"></ul>
+        </section>
     </main>
     <footer>
         <p>&copy; 2025 Diego López Yse</p>
     </footer>
+    <script src="script.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const articles = [
@@ -42,8 +41,10 @@
                 { title: "Graph Neural Networks Explained", date: "2024-11-15", category: "Graphs", link: "graph_nn.html" },
                 { title: "Optimizing Machine Learning Models", date: "2024-10-05", category: "Machine Learning", link: "ml_models.html" }
             ];
+            
             const articleList = document.getElementById("article-list");
             const filter = document.getElementById("category-filter");
+            
             function renderArticles(filterCategory) {
                 articleList.innerHTML = "";
                 articles.filter(article => filterCategory === "all" || article.category === filterCategory)
@@ -55,9 +56,11 @@
                         articleList.appendChild(listItem);
                     });
             }
+            
             filter.addEventListener("change", () => {
                 renderArticles(filter.value);
             });
+            
             renderArticles("all");
         });
     </script>
