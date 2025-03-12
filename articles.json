@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Understanding BERT for NLP",
+        "category": "NLP",
+        "date": "2024-12-01",
+        "url": "articles/understanding-bert.html"
+    },
+    {
+        "title": "Graph Neural Networks Explained",
+        "category": "Graphs",
+        "date": "2024-11-15",
+        "url": "articles/graph-neural-networks.html"
+    },
+    {
+        "title": "Optimizing Machine Learning Models",
+        "category": "Machine Learning",
+        "date": "2024-10-05",
+        "url": "articles/optimizing-ml.html"
+    }
+]
