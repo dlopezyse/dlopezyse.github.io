@@ -42,6 +42,9 @@ ul {
 
 li {
     margin: 10px 0;
+    background: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .article-title {
