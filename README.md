@@ -1,4 +1,4 @@
-# Diego López Yse - My Articles  
+# Robot Immigrants
 
 This repository hosts my personal GitHub Pages site, where I share articles on AI, Machine Learning, NLP, Graphs, and other topics.  
 
