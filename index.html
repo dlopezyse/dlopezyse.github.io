@@ -17,7 +17,7 @@
             <p>This site showcases my technical writings on various AI topics, including Machine Learning, NLP, Graphs, and more.</p>
         </section>
         <div id="content-wrapper">
-            <aside id="sidebar" style="float: left; margin-right: 20px;">
+            <aside id="sidebar">
                 <h3>Filter by category</h3>
                 <select id="category-filter">
                     <option value="all">All</option>
@@ -43,10 +43,10 @@
                 { title: "Graph Neural Networks Explained", date: "2024-11-15", category: "Graphs", link: "graph_nn.html" },
                 { title: "Optimizing Machine Learning Models", date: "2024-10-05", category: "Machine Learning", link: "ml_models.html" }
             ];
-            
+
             const articleList = document.getElementById("article-list");
             const filter = document.getElementById("category-filter");
-            
+
             function renderArticles(filterCategory) {
                 articleList.innerHTML = "";
                 articles.filter(article => filterCategory === "all" || article.category === filterCategory)
@@ -58,11 +58,11 @@
                         articleList.appendChild(listItem);
                     });
             }
-            
+
             filter.addEventListener("change", () => {
                 renderArticles(filter.value);
             });
-            
+
             renderArticles("all");
         });
     </script>
