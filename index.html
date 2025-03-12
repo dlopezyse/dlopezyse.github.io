@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diego López Yse - My Articles</title>
+    <title>Diego López Yse - Technical Articles</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Diego López Yse</h1>
-        <p>AI Researcher</p>
+        <p>AI & Data Science | Technical Writer | Researcher</p>
     </header>
     <main>
         <section id="bio">
             <h2>About Me</h2>
-            <p>This site showcases my technical writings on various AI topics, including Machine Learning, NLP, 
-            and Graphs</p>
+            <p>I specialize in AI, Data Science, and Computer Vision, focusing on practical applications and research. 
+            This site showcases my technical writings on various AI topics, including Machine Learning, NLP, 
+            and Geospatial Analysis.</p>
         </section>
         <div id="content-wrapper">
             <aside id="sidebar">
@@ -37,5 +38,36 @@
         <p>&copy; 2025 Diego López Yse</p>
     </footer>
     <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const articles = [
+                { title: "Your Guide to Natural Language Processing", date: "2024-12-01", category: "NLP", image: "images/nlp_guide.jpg", link: "nlp_guide.html" },
+                { title: "Graph Neural Networks Explained", date: "2024-11-15", category: "Graphs", image: "images/graph_nn.jpg", link: "graph_nn.html" },
+                { title: "Optimizing Machine Learning Models", date: "2024-10-05", category: "Machine Learning", image: "images/ml_models.jpg", link: "ml_models.html" }
+            ];
+            
+            const articleList = document.getElementById("article-list");
+            const filter = document.getElementById("category-filter");
+            
+            function renderArticles(filterCategory) {
+                articleList.innerHTML = "";
+                articles.filter(article => filterCategory === "all" || article.category === filterCategory)
+                    .forEach(article => {
+                        const listItem = document.createElement("li");
+                        listItem.innerHTML = `
+                            <img src="${article.image}" alt="${article.title}" class="article-image">
+                            <a href="${article.link}" class="article-title">${article.title}</a> - ${article.date}
+                        `;
+                        articleList.appendChild(listItem);
+                    });
+            }
+            
+            filter.addEventListener("change", () => {
+                renderArticles(filter.value);
+            });
+            
+            renderArticles("all");
+        });
+    </script>
 </body>
 </html>
