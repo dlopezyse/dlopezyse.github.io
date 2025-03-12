@@ -4,7 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diego López Yse - My Articles</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Inline CSS for simplicity - move to style.css later */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f0f0f0;
+        }
+
+        main {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 200px 1fr; /* Explicitly set columns */
+            gap: 20px;
+        }
+
+        #bio {
+            grid-column: 1 / 3; /* Span both columns */
+        }
+
+        #sidebar {
+            padding: 10px;
+            border-right: 1px solid #ddd;
+        }
+
+        #articles {
+            padding: 10px;
+        }
+
+        #article-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #article-list li {
+            margin-bottom: 10px;
+        }
+
+        #article-list a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #f0f0f0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -16,26 +72,23 @@
             <h2>About This Site</h2>
             <p>This site lists my writings on various AI topics, including Machine Learning, NLP, Graphs, and more.</p>
         </section>
-        <div id="content-wrapper">
-            <aside id="sidebar">
-                <h3>Filter by category</h3>
-                <select id="category-filter">
-                    <option value="all">All</option>
-                    <option value="NLP">NLP</option>
-                    <option value="Graphs">Graphs</option>
-                    <option value="Machine Learning">Machine Learning</option>
-                </select>
-            </aside>
-            <section id="articles">
-                <h2>Technical Articles</h2>
-                <ul id="article-list"></ul>
-            </section>
-        </div>
+        <aside id="sidebar">
+            <h3>Filter by category</h3>
+            <select id="category-filter">
+                <option value="all">All</option>
+                <option value="NLP">NLP</option>
+                <option value="Graphs">Graphs</option>
+                <option value="Machine Learning">Machine Learning</option>
+            </select>
+        </aside>
+        <section id="articles">
+            <h2>Technical Articles</h2>
+            <ul id="article-list"></ul>
+        </section>
     </main>
     <footer>
         <p>&copy; 2025 Diego López Yse</p>
     </footer>
-    <script src="script.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const articles = [
