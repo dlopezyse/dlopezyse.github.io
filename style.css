@@ -6,6 +6,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #f8f8f8;
+    color: #333;
 }
 
 /* Header */
@@ -25,21 +27,17 @@ header {
     margin: 20px auto;
 }
 
-/* Sidebar */
-#sidebar {
-    width: 250px;
-    padding: 20px;
+/* Filter Bar */
+#filter-container {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
     background: #f4f4f4;
     border-radius: 10px;
-    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
-#sidebar h3 {
-    margin-top: 0;
-}
-
-#category-filter {
-    width: 100%;
+#filter-container select {
     padding: 10px;
     font-size: 16px;
 }
@@ -56,6 +54,9 @@ header {
 
 #article-list li {
     margin-bottom: 10px;
+    background: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 #article-list a {
@@ -79,10 +80,5 @@ footer {
     #content-wrapper {
         flex-direction: column;
         align-items: center;
-    }
-
-    #sidebar {
-        width: 100%;
-        margin-bottom: 20px;
     }
 }
