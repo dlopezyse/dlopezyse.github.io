@@ -4,64 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diego López Yse - My Articles</title>
-    <style>
-        /* Inline CSS for simplicity - move to style.css later */
-        body {
-            font-family: sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #f0f0f0;
-        }
-
-        main {
-            padding: 20px;
-            display: grid;
-            grid-template-columns: 200px 1fr; /* Explicitly set columns */
-            gap: 20px;
-        }
-
-        #bio {
-            grid-column: 1 / 3; /* Span both columns */
-        }
-
-        #sidebar {
-            padding: 10px;
-            border-right: 1px solid #ddd;
-        }
-
-        #articles {
-            padding: 10px;
-        }
-
-        #article-list {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        #article-list li {
-            margin-bottom: 10px;
-        }
-
-        #article-list a {
-            text-decoration: none;
-            color: #007bff;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background-color: #f0f0f0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
+    <link rel="stylesheet" href="style.css"> </head>
 <body>
     <header>
         <h1>Diego López Yse</h1>
@@ -96,10 +39,8 @@
                 { title: "Graph Neural Networks Explained", date: "2024-11-15", category: "Graphs", link: "graph_nn.html" },
                 { title: "Optimizing Machine Learning Models", date: "2024-10-05", category: "Machine Learning", link: "ml_models.html" }
             ];
-
             const articleList = document.getElementById("article-list");
             const filter = document.getElementById("category-filter");
-
             function renderArticles(filterCategory) {
                 articleList.innerHTML = "";
                 articles.filter(article => filterCategory === "all" || article.category === filterCategory)
@@ -111,11 +52,9 @@
                         articleList.appendChild(listItem);
                     });
             }
-
             filter.addEventListener("change", () => {
                 renderArticles(filter.value);
             });
-
             renderArticles("all");
         });
     </script>
