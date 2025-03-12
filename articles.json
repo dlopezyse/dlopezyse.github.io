@@ -2,19 +2,19 @@
     {
         "title": "Your Guide to Natural Language Processing NLP",
         "category": "NLP",
-        "date": "2024-12-01",
+        "date": "2019-01-15",
         "url": "articles/Your-Guide-to-Natural-Language-Processing-NLP.html"
     },
     {
-        "title": "Graph Neural Networks Explained",
+        "title": "Navigating the Vehicle Routing Problem (VRP) using Python",
         "category": "Graphs",
-        "date": "2024-11-15",
-        "url": "articles/graph-neural-networks.html"
+        "date": "2025-03-11",
+        "url": "articles/Navigating-the-Vehicle-Routing-Problem--VRP--using-Python.html"
     },
     {
-        "title": "Optimizing Machine Learning Models",
+        "title": "The Complete Guide to Decision Trees",
         "category": "Machine Learning",
-        "date": "2024-10-05",
-        "url": "articles/optimizing-ml.html"
+        "date": "2019-04-14",
+        "url": "articles/The-Complete-Guide-to-Decision-Trees.html"
     }
 ]
