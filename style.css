@@ -1,0 +1,58 @@
+/* Hacker Style Theme */
+body {
+    background-color: black;
+    color: #33ff33; /* Neon Green */
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #111;
+    padding: 20px;
+    border-bottom: 2px solid #33ff33;
+}
+
+h1 {
+    color: #33ff33;
+    text-shadow: 0 0 5px #33ff33;
+}
+
+/* Links */
+a {
+    color: #33ff33;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-shadow: 0 0 10px #33ff33;
+}
+
+/* Hacker Console Effect */
+#console {
+    background-color: #000;
+    border: 2px solid #33ff33;
+    padding: 15px;
+    font-size: 16px;
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+    white-space: pre-line;
+    box-shadow: 0 0 10px #33ff33;
+}
+
+/* Animation for Typing Effect */
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    height: 18px;
+    background-color: #33ff33;
+    animation: blink 1s infinite;
+}
