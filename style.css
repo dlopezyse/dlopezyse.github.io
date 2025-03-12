@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f8f8f8;
     color: #333;
 }
 
@@ -10,55 +10,44 @@ header {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 main {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: white;
+    background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 #filter-container {
     text-align: center;
     margin-bottom: 15px;
-    padding: 10px;
-    background-color: #eee;
-    border-radius: 5px;
 }
 
-#filter-container label {
-    font-weight: bold;
-}
-
-#category-filter {
-    margin-left: 10px;
+#filter-container select {
     padding: 5px;
 }
 
-h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
+h1, h2 {
+    text-align: center;
 }
 
 ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
 li {
     margin: 10px 0;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-left: 5px solid #333;
 }
 
 .article-title {
-    font-weight: bold;
-    color: #007bff;
     text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
 }
 
 .article-title:hover {
@@ -67,7 +56,7 @@ li {
 
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     background-color: #333;
     color: white;
     margin-top: 20px;
