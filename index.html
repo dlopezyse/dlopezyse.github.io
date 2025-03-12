@@ -9,27 +9,33 @@
 <body>
     <header>
         <h1>Diego López Yse</h1>
-        <p>AI Researcher</p>
+        <p>AI & Data Science | Technical Writer | Researcher</p>
     </header>
     <main>
         <section id="bio">
-            <p>This site showcases my writings on various AI topics, including Machine Learning, NLP, 
-            and Graphs.</p>
+            <h2>About Me</h2>
+            <p>I specialize in AI, Data Science, and Computer Vision, focusing on practical applications and research. 
+            This site showcases my technical writings on various AI topics, including Machine Learning, NLP, 
+            and Geospatial Analysis.</p>
         </section>
-        <section id="articles">
-            <h2>Technical Articles</h2>
-            <label for="category-filter">Filter by category:</label>
-            <select id="category-filter">
-                <option value="all">All</option>
-                <option value="NLP">NLP</option>
-                <option value="Graphs">Graphs</option>
-                <option value="Machine Learning">Machine Learning</option>
-            </select>
-            <ul id="article-list"></ul>
-        </section>
+        <div id="content-wrapper">
+            <aside id="sidebar">
+                <h3>Filter by category</h3>
+                <select id="category-filter">
+                    <option value="all">All</option>
+                    <option value="NLP">NLP</option>
+                    <option value="Graphs">Graphs</option>
+                    <option value="Machine Learning">Machine Learning</option>
+                </select>
+            </aside>
+            <section id="articles">
+                <h2>Technical Articles</h2>
+                <ul id="article-list"></ul>
+            </section>
+        </div>
     </main>
     <footer>
-        <p>Diego López Yse</p>
+        <p>&copy; 2025 Diego López Yse</p>
     </footer>
     <script src="script.js"></script>
 </body>
