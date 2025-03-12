@@ -1,58 +1,76 @@
-/* Hacker Style Theme */
+/* General Styles */
 body {
     background-color: black;
-    color: #33ff33; /* Neon Green */
-    font-family: "Courier New", Courier, monospace;
+    color: lime;
+    font-family: "Courier New", monospace;
     text-align: center;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
-/* Header */
-header {
-    background-color: #111;
-    padding: 20px;
-    border-bottom: 2px solid #33ff33;
-}
-
+/* Title */
 h1 {
-    color: #33ff33;
-    text-shadow: 0 0 5px #33ff33;
+    font-size: 2.5em;
+    text-shadow: 0 0 10px lime;
+    margin-top: 40px;
+    margin-bottom: 20px; /* Space below the title */
+}
+
+/* Search Bar Section */
+#search-container {
+    margin-bottom: 30px; /* Space below search bar */
+}
+
+select {
+    background-color: black;
+    color: white;  /* Make search dropdown text white */
+    border: 1px solid lime;
+    padding: 5px;
+    font-size: 1em;
+}
+
+/* Articles Section */
+#articles-title {
+    color: white; /* Make "Articles" title white */
+    font-size: 1.8em;
+    text-shadow: 0 0 8px lime;
+    margin-bottom: 20px;
+}
+
+#articles {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px; /* Space below articles */
+}
+
+#articles li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px; /* Space above footer */
+    font-size: 1.1em;
 }
 
 /* Links */
 a {
-    color: #33ff33;
+    color: lime;
     text-decoration: none;
-    font-weight: bold;
 }
 
 a:hover {
-    text-shadow: 0 0 10px #33ff33;
+    text-shadow: 0 0 5px white;
 }
 
-/* Hacker Console Effect */
-#console {
-    background-color: #000;
-    border: 2px solid #33ff33;
-    padding: 15px;
-    font-size: 16px;
-    text-align: left;
-    max-width: 600px;
-    margin: 20px auto;
-    white-space: pre-line;
-    box-shadow: 0 0 10px #33ff33;
+/* Bullet Points */
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Animation for Typing Effect */
-@keyframes blink {
-    50% { opacity: 0; }
-}
-
-.cursor {
-    display: inline-block;
-    width: 10px;
-    height: 18px;
-    background-color: #33ff33;
-    animation: blink 1s infinite;
+ul li::before {
+    content: "• ";
+    color: lime;
 }
