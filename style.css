@@ -28,7 +28,7 @@ header {
 #profile-pic {
     width: 80px; /* Adjust size as needed */
     height: 80px;
-    border-radius: 0%; /* Makes it round */
+    border-radius: 10%; /* Makes it round */
     margin-right: 15px;
 }
 
