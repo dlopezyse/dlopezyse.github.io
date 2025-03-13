@@ -14,6 +14,27 @@
         <p class="subtitle">Exploring AI and Beyond. By Diego López Yse</p>
     </div>
 
+    <script>
+        function scrambleText(element) {
+            const originalText = element.dataset.text;
+            let scrambledText = '';
+            for (let char of originalText) {
+                if (Math.random() < 0.8) {
+                    scrambledText += String.fromCharCode(Math.floor(Math.random() * 94) + 33);
+                } else {
+                    scrambledText += char;
+                }
+            }
+            element.dataset.scrambled = scrambledText;
+        }
+
+        const subtitle = document.querySelector('.subtitle');
+        if (subtitle) {
+            setInterval(() => scrambleText(subtitle), 500);
+            scrambleText(subtitle);
+        }
+    </script>
+
     <!-- Middle Section - Filter & Articles -->
     <div id="middle-section">
         <h2 id="articles-title">Articles</h2>
