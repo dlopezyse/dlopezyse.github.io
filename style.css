@@ -30,14 +30,15 @@ h1 {
 .cursor {
     display: inline-block;
     margin-left: 5px;
-    color: #0f0;
+    color: white;
     font-weight: bold;
-    animation: blinkCursor 0.8s steps(2, start) infinite;
+    animation: blinkCursor 1s infinite;
 }
 
 @keyframes blinkCursor {
-    0%, 100% { opacity: 1; }
+    0% { opacity: 1; }
     50% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 /* Middle Section - Filter & Articles */
