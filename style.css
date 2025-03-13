@@ -29,11 +29,13 @@ h1 {
 /* Blinking cursor */
 .cursor {
     display: inline-block;
-    margin-left: 0px;
-    color: lime;
+    margin-left: -2px; /* Fix unwanted space */
+    color: lime !important; /* Ensure cursor is always lime */
     font-weight: bold;
     animation: blinkCursor 1s infinite;
+    letter-spacing: -2px; /* Remove extra spacing */
 }
+
 
 @keyframes blinkCursor {
     0% { opacity: 1; }
