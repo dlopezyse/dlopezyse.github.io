@@ -28,37 +28,17 @@ h1 {
 
 .subtitle {
     font-size: 18px;
-    color: white; /* Green hacker-style */
+    color: white; /* hacker-style */
     text-align: center;
     position: relative;
-    animation: glitch 0.8s infinite alternate ease-in-out;
+    text-shadow: 2px 2px 5px #0f0;
+    animation: subtleGlitch 2s infinite steps(10, end);
 }
 
-@keyframes glitch {
-    0% {
-        text-shadow: 2px 2px 5px #0f0, -2px -2px 5px #0f0;
-        transform: skewX(0deg);
-    }
-    20% {
-        text-shadow: -2px -2px 5px #0f0, 2px 2px 5px #0f0;
-        transform: skewX(5deg);
-    }
-    40% {
-        text-shadow: 3px 3px 5px #0f0, -3px -3px 5px #0f0;
-        transform: skewX(-5deg);
-    }
-    60% {
-        text-shadow: -3px -3px 5px #0f0, 3px 3px 5px #0f0;
-        transform: skewX(3deg);
-    }
-    80% {
-        text-shadow: 1px 1px 5px #0f0, -1px -1px 5px #0f0;
-        transform: skewX(-3deg);
-    }
-    100% {
-        text-shadow: 2px 2px 5px #0f0, -2px -2px 5px #0f0;
-        transform: skewX(0deg);
-    }
+@keyframes subtleGlitch {
+    0% { opacity: 1; text-shadow: 2px 2px 5px #0f0; }
+    50% { opacity: 0.9; text-shadow: 3px 3px 6px #0f0; }
+    100% { opacity: 1; text-shadow: 2px 2px 5px #0f0; }
 }
 
 
