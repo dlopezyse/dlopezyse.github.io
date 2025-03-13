@@ -29,8 +29,8 @@ h1 {
 /* Blinking cursor */
 .cursor {
     display: inline-block;
-    margin-left: 5px;
-    color: white;
+    margin-left: 0px;
+    color: lime;
     font-weight: bold;
     animation: blinkCursor 1s infinite;
 }
