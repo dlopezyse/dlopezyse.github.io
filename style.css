@@ -26,6 +26,20 @@ h1 {
     text-shadow: 0 0 5px lime;
 }
 
+/* Blinking cursor */
+.cursor {
+    display: inline-block;
+    margin-left: 5px;
+    color: #0f0;
+    font-weight: bold;
+    animation: blinkCursor 0.8s steps(2, start) infinite;
+}
+
+@keyframes blinkCursor {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
 /* Middle Section - Filter & Articles */
 #middle-section {
     padding: 30px 0;
