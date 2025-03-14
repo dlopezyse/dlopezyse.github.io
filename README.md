@@ -1,13 +1,32 @@
-# Robot Immigrants
+# Robot Immigrants | The Blog to Crack the AI Maze 
 
-This repository hosts my personal GitHub Pages site, where I share articles on AI, Machine Learning, NLP, Graphs, and other topics.  
+Welcome to **Robot Immigrants**, my blog exploring AI, Machine Learning, NLP, and Graph Theory. Built with a sleek cyberpunk aesthetic, this site is designed for those who want to dive into AI topics.  
 
-## Features  
-- 📝 **Curated AI Articles** – Covering NLP, Graphs, and Machine Learning topics.  
-- 📂 **Category Filtering** – Easily browse articles by topic.  
-- 🎨 **Minimalist UI** – Focused on readability and usability.  
+## 🚀 Features  
+✔ **Dynamic Article Filtering** – Just browse your topic of preference.  
+✔ **JSON-Powered Content** – No need to touch code; just update `articles.json` with new posts.  
+✔ **Cyber-Hacker UI** – A glowing neon interface with subtle animations for a hacker-style experience.  
+✔ **Fully Responsive** – Works seamlessly on desktop and mobile.  
 
-## How to Run Locally  
-1. Clone this repository:  
-   ```sh
-   git clone https://github.com/dlopezYse/dlopezYse.github.io.git  
+## Project Structure  
+
+| File/Folder     | Description |
+|----------------|------------|
+| 📂 `articles/` | Contains all blog post HTML files |
+| 📄 `index.html` | Main page (Hacker UI) |
+| 🎨 `style.css` | Cyberpunk-style CSS |
+| 🚀 `script.js` | Handles dynamic filtering & JSON loading |
+| 📜 `articles.json` | List of blog posts (edit this to add new articles) |
+| 📘 `README.md` | You’re reading this now! |
+
+## 🔧 How to Use  
+1. **Clone the repo:**  
+   ```bash
+   git clone https://github.com/yourusername/robot-immigrants.git
+   cd robot-immigrants
+2. **Run it locally:** Open index.html in your browser (no need for a server).
+3. **Add new articles:** Just update articles.json – no coding required!
+4. **Customize the style:** Tweak style.css for a unique aesthetic.
+
+## About
+Made by Diego López Yse. Find me on: 🔹 [GitHub](https://github.com/dlopezyse) 🔹 [LinkedIn](https://www.linkedin.com/in/lopezyse/)
