@@ -1,6 +1,6 @@
 # Robot Immigrants | The Blog to Crack the AI Maze 
 
-Welcome to **Robot Immigrants**, my blog exploring AI, Machine Learning, NLP, and Graph Theory. Built with a sleek cyberpunk aesthetic, this site is designed for those who want to dive into AI topics.  
+Welcome to [Robot Immigrants](https://dlopezyse.github.io/), my blog exploring AI, Machine Learning, NLP, and Graph Theory. Built with a sleek cyberpunk aesthetic, this site is designed for those who want to dive into AI topics.  
 
 ## 🚀 Features  
 ✔ **Dynamic Article Filtering** – Just browse your topic of preference.  
