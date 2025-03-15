@@ -1,6 +1,6 @@
-# Hack the Machine
+# Wild Machines
 
-Welcome to [Hack the Machine](https://dlopezyse.github.io/), my blog exploring AI, Machine Learning, NLP, and Graph Theory. Built with a sleek cyberpunk aesthetic, this site is designed for those who want to dive into AI topics.  
+Welcome to [Wild Machines](https://dlopezyse.github.io/), my blog exploring AI, Machine Learning, NLP, and Graph Theory. Built with a sleek cyberpunk aesthetic, this site is designed for those who want to dive into AI topics.  
 
 ## 🚀 Features  
 ✔ **Dynamic Article Filtering** – Just browse your topic of preference.  
