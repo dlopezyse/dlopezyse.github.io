@@ -20,7 +20,7 @@ Welcome to [Predator Machines](https://dlopezyse.github.io/), my blog exploring 
 | 📘 `README.md` | You’re reading this now! |
 
 ## 🔧 How to Use  
-1. **Clone the repo:**
+1. **Clone the repo**
 2. **Run it locally:** Open index.html in your browser (no need for a server).
 3. **Add new articles:** Just update articles.json – no coding required!
 4. **Customize the style:** Tweak style.css for a unique aesthetic.
