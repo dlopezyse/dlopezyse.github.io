@@ -1,6 +1,6 @@
-# Wild Machines
+# Predator Machines
 
-Welcome to [Wild Machines](https://dlopezyse.github.io/), my blog exploring AI, Machine Learning, NLP, and Graph Theory. Built with a sleek cyberpunk aesthetic, this site is designed for those who want to dive into AI topics.  
+Welcome to [Predator Machines](https://dlopezyse.github.io/), my blog exploring AI, Machine Learning, NLP, and Graph Theory. Built with a sleek cyberpunk aesthetic, this site is designed for those who want to dive into AI topics.  
 
 ## 🚀 Features  
 ✔ **Dynamic Article Filtering** – Just browse your topic of preference.  
