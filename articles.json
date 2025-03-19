@@ -12,6 +12,48 @@
         "url": "articles/Your-Guide-to-Generative-AI.html"
          },
          {
+        "title": "Modelling Regression Trees",
+        "category": "Machine Learning",
+        "date": "2020-06-16",
+        "url": "articles/Modelling-Regression-Trees.html"
+         },   
+         {
+        "title": "Modelling Classification Trees",
+        "category": "Machine Learning",
+        "date": "2020-05-19",
+        "url": "articles/Modelling-Classification-Trees.html"
+         },   
+         {
+        "title": "How to Prepare your Data",
+        "category": "Machine Learning",
+        "date": "2020-05-10",
+        "url": "articles/How-to-Prepare-your-Data.html"
+         },
+         {
+        "title": "Exploratory Data Analysis on Steroids",
+        "category": "Machine Learning",
+        "date": "2020-04-30",
+        "url": "articles/Exploratory-Data-Analysis-on-Steroids.html"
+         }, 
+         {
+        "title": "Before Probability Distributions",
+        "category": "Machine Learning",
+        "date": "2020-03-16",
+        "url": "articles/Before-Probability-Distributions.html"
+         },
+         {
+        "title": "Essential-Programming | Sorting Algorithms",
+        "category": "Programming",
+        "date": "2020-01-23",
+        "url": "articles/Essential-Programming---Sorting-Algorithms.html"
+         },
+         {
+        "title": "Essential Programming | Control Structures",
+        "category": "Programming",
+        "date": "2020-01-22",
+        "url": "articles/Essential-Programming---Control-Structures.html"
+         },
+         {
         "title": "Essential Programming | Time Complexity",
         "category": "Programming",
         "date": "2020-01-17",
