@@ -12,6 +12,36 @@
         "url": "articles/Your-Guide-to-Generative-AI.html"
          },
          {
+        "title": "The Illusion of Choice",
+        "category": "AI & Society",
+        "date": "2020-09-17",
+        "url": "articles/The-illusion-of-choice.html"
+         },
+         {
+        "title": "AI Has Become So Human That You Can't Tell the Difference",
+        "category": "AI & Society",
+        "date": "2020-09-17",
+        "url": "articles/AI-Has-Become-So-Human--That-You-Can-t-Tell-the-Difference.html"
+         },
+         {
+        "title": "The Secret Weapons of Fake News",
+        "category": "AI & Society",
+        "date": "2020-09-15",
+        "url": "articles/The-Secret-Weapons-of-Fake-News.html"
+         },
+         {
+        "title": "Your Guide to Linear Regression Models",
+        "category": "Machine Learning",
+        "date": "2020-09-08",
+        "url": "articles/Your-Guide-to-Linear-Regression-Models.html"
+         },
+         {
+        "title": "Algorithms of Social Manipulation",
+        "category": "Machine Learning",
+        "date": "2020-09-05",
+        "url": "articles/Algorithms-of-Social-Manipulation.html"
+         },
+         {
         "title": "Modelling Regression Trees",
         "category": "Machine Learning",
         "date": "2020-06-16",
