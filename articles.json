@@ -12,6 +12,36 @@
         "url": "articles/Your-Guide-to-Generative-AI.html"
          },
          {
+        "title": "The Problem of Simplification in Natural Language Processing (NLP)",
+        "category": "NLP",
+        "date": "2021-09-05",
+        "url": "articles/The-problem-of-Simplification-in-Natural-Language-Processing--NLP.html"
+         }, 
+         {
+        "title": "NLP | Text-Vectorization",
+        "category": "NLP",
+        "date": "2021-07-03",
+        "url": "articles/NLP---Text-Vectorization.html"
+         }, 
+         {
+        "title": "Your Guide to Perceptrons",
+        "category": "Machine Learning",
+        "date": "2021-03-03",
+        "url": "articles/Your-guide-to-Perceptrons.html"
+         },
+         {
+        "title": "Text Normalization for Natural Language Processing (NLP)",
+        "category": "NLP",
+        "date": "2021-02-17",
+        "url": "articles/Text-Normalization-for-Natural-Language-Processing--NLP.html"
+         },  
+         {
+        "title": "How to Begin Your NLP Journey",
+        "category": "NLP",
+        "date": "2021-01-26",
+        "url": "articles/How-to-Begin-Your-NLP-Journey.html"
+         },
+         {
         "title": "The Illusion of Choice",
         "category": "AI & Society",
         "date": "2020-09-17",
