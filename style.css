@@ -55,13 +55,15 @@ h1 {
     margin-bottom: 20px; /* Space between filter and articles */
     width: 80%; /* Adjust width as needed */
     max-width: 700px; /* Limit maximum width */
-    display: flex;
-    justify-content: flex-start; /* Align filter elements to the left */
+    display: grid; /* Use grid for alignment */
+    grid-template-columns: auto 1fr; /* Filter Label | Dropdown */
+    align-items: center; /* Vertically align label and dropdown */
     gap: 15px;
 }
 
 label {
     color: white;
+    text-align: left; /* Ensure label text is left-aligned */
 }
 
 select {
@@ -78,17 +80,12 @@ select {
     background-position-x: 100%;
     background-position-y: 5px;
     padding-right: 25px; /* Adjust padding for the arrow */
+    width: 100%; /* Make the dropdown take available width */
 }
 
 /* Articles */
 #articles-title {
-    color: white;
-    font-size: 1.8em;
-    text-shadow: 0 0 8px lime;
-    margin-bottom: 15px;
-    width: 80%; /* Match filter width */
-    max-width: 700px;
-    text-align: left; /* Align title to the left */
+    display: none; /* Remove the "Articles" title */
 }
 
 #article-list {
@@ -100,10 +97,10 @@ select {
 
 .article-item {
     display: grid; /* Use grid for alignment */
-    grid-template-columns: 3em 1fr auto; /* Number | Title | Date */
-    align-items: center;
+    grid-template-columns: 3em 1fr auto; /* Number | Title & Subtitle | Date */
+    align-items: start; /* Align items to the top */
     padding: 8px 15px;
-    margin-bottom: 5px;
+    margin-bottom: 8px; /* Increased margin for better separation */
     background-color: #111; /* Dark background for each item */
     border-left: 2px solid lime; /* Subtle highlight bar */
     border-radius: 0; /* Square corners */
@@ -118,6 +115,7 @@ select {
     font-size: 1em;
     text-align: right; /* Align number to the right within its column */
     padding-right: 10px;
+    padding-top: 2px; /* Adjust vertical alignment */
 }
 
 .article-title {
@@ -125,16 +123,24 @@ select {
     color: lime;
     text-decoration: none;
     text-align: left;
+    margin-bottom: 3px; /* Space between title and subtitle */
 }
 
 .article-title:hover {
     text-shadow: 0 0 5px white;
 }
 
+.article-subtitle {
+    color: #aaa; /* Grey for the subtitle */
+    font-size: 0.9em;
+    text-align: left;
+}
+
 .article-date {
     color: #aaa; /* Grey for the date */
     font-size: 0.9em;
     text-align: right; /* Align date to the right */
+    padding-top: 2px; /* Adjust vertical alignment */
 }
 
 .no-articles, .error-loading {
