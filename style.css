@@ -164,27 +164,31 @@ select option {
 #footer-section {
     padding: 30px 0;
     font-size: 1.1em;
-    border-top: 2px solid lime; /* Top border for the footer */
-    margin-top: 30px; /* Add space above the footer */
-    text-align: center; /* Center footer text */
-    width: 80%; /* Control width */
-    max-width: 700px; /* Limit maximum width */
+    border-top: 2px solid lime;
+    margin-top: 30px;
+    text-align: center;
+    width: 80%;
+    max-width: 700px;
 }
 
-#footer-section a {
+.footer-label {
+    color: lime;
+    font-weight: bold; /* Optional: Make them bold */
+    margin-right: 5px; /* Add some space between label and text/link */
+}
+
+.footer-name {
+    color: white;
+}
+
+.footer-link {
     color: white;
     text-decoration: none;
     margin: 0 10px;
 }
 
-#footer-section a:hover {
+.footer-link:hover {
     text-shadow: 0 0 5px white;
-}
-
-.footer-label {
-    color: lime; /* Style "BY:" and "FIND:" */
-    font-weight: bold; /* Make them stand out a bit more */
-    margin-right: 5px;
 }
 
 /* Links */
