@@ -181,6 +181,12 @@ select option {
     text-shadow: 0 0 5px white;
 }
 
+.footer-label {
+    color: white; /* Style "BY:" and "FIND:" as white */
+    font-weight: bold; /* Make them stand out a bit more */
+    margin-right: 5px;
+}
+
 /* Links */
 a {
     color: lime;
