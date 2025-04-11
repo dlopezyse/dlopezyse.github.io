@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild Machines</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="upper-section">
+        <h1>Wild Machines<span class="cursor">|</span></h1>
+        <p class="subtitle">A Blog to Navigate the AI Landscape</p>
+    </div>
+
+    <div id="middle-section">
+        <h2 id="articles-title">Articles</h2>
+
+        <div id="search-container">
+            <label for="filter">Filter by topic:</label>
+            <select id="filter">
+                <option value="all">All</option>
+                <option value="AI & Society">AI & Society</option>
+                <option value="Computer Vision">Computer Vision</option>
+                <option value="Graphs">Graphs</option>
+                <option value="Machine Learning">Machine Learning</option>
+                <option value="NLP">NLP</option>
+                <option value="Programming">Programming</option>
+
+            </select>
+        </div>
+        <ul id="article-list"></ul>
+    </div>
+
+    <div id="footer-section">
+        <br><br>
+        By Diego López Yse. Find me <a href="https://github.com/dlopezyse" target="_blank" style="color: white; text-decoration: none;">@GitHub</a>
+                <a href="https://www.linkedin.com/in/lopezyse/" target="_blank" style="color: white; text-decoration: none;">@LinkedIn</a>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const articleList = document.getElementById("article-list");
+            const filter = document.getElementById("filter");
+
+            // Fetch articles from the JSON file
+            fetch("articles.json")
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("Failed to load articles.json");
+                    }
+                    return response.json();
+                })
+                .then(articles => {
+                    function renderArticles(filterCategory) {
+                        articleList.innerHTML = ""; // Clear existing list
+
+                        articles
+                            .filter(article => filterCategory === "all" || article.category === filterCategory)
+                            .forEach((article, index) => {
+                                const listItem = document.createElement("li");
+                                listItem.classList.add("article-item"); // Add a class for styling
+                                listItem.innerHTML = `
+                                    <span class="item-number">${index + 1}.</span>
+                                    <a href="${article.url}" class="article-title">${article.title}</a>
+                                    <span class="article-date">${article.date}</span>
+                                `;
+                                articleList.appendChild(listItem);
+                            });
+
+                        if (articleList.innerHTML === "") {
+                            articleList.innerHTML = "<li class='no-articles'>No articles found for this category.</li>";
+                        }
+                    }
+
+                    // Listen for filter changes
+                    filter.addEventListener("change", () => {
+                        renderArticles(filter.value);
+                    });
+
+                    // Initial load (show all articles)
+                    renderArticles("all");
+                })
+                .catch(error => {
+                    console.error("Error loading articles:", error);
+                    articleList.innerHTML = "<li class='error-loading'>Failed to load articles.</li>";
+                });
+        });
+    </script>
+
+</body>
+</html>
