@@ -3,15 +3,23 @@ body {
     background-color: black;
     color: lime;
     font-family: "Courier New", monospace;
-    text-align: center;
+    text-align: center; /* Center text within elements */
     margin: 0;
     padding: 0;
+    display: flex; /* Enable flexbox for body */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: flex-start; /* Align items to the top initially */
+    min-height: 100vh; /* Ensure body takes at least the full viewport height */
 }
 
 /* Upper Section - Title & Subtitle */
 #upper-section {
-    padding: 40px 0;
+    padding: 40px 20px; /* Add horizontal padding */
     border-bottom: 2px solid lime; /* Separation line */
+    text-align: center; /* Ensure text is centered within the section */
+    width: 80%; /* Control width */
+    max-width: 700px; /* Limit maximum width */
 }
 
 h1 {
@@ -44,17 +52,17 @@ h1 {
 
 /* Middle Section - Filter & Articles */
 #middle-section {
-    padding: 30px 20px; /* Add some horizontal padding */
+    padding: 30px 20px; /* Add horizontal padding */
     border-bottom: none; /* Separation line */
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align content to the left */
+    align-items: stretch; /* Stretch items to take available width */
+    width: 80%; /* Control width */
+    max-width: 700px; /* Limit maximum width */
 }
 
 #search-container {
     margin-bottom: 20px; /* Space between filter and articles */
-    width: 80%; /* Adjust width as needed */
-    max-width: 700px; /* Limit maximum width */
     display: grid; /* Use grid for alignment */
     grid-template-columns: auto 1fr; /* Filter Label | Dropdown */
     align-items: center; /* Vertically align label and dropdown */
@@ -83,7 +91,12 @@ select {
     width: 100%; /* Make the dropdown take available width */
 }
 
-/* Articles */
+/* Style the dropdown options */
+select option {
+    background-color: #222; /* Dark background for options */
+    color: white; /* White text color for options */
+}
+
 #articles-title {
     display: none; /* Remove the "Articles" title */
 }
@@ -91,8 +104,6 @@ select {
 #article-list {
     list-style-type: none;
     padding: 0;
-    width: 80%; /* Match filter width */
-    max-width: 700px;
 }
 
 .article-item {
@@ -151,11 +162,18 @@ select {
 
 /* Lower Section - Footer */
 #footer-section {
-    padding: 30px 0;
+    padding: 30px 20px; /* Add horizontal padding */
     font-size: 1.1em;
     border-top: 2px solid lime; /* Top border for the footer */
     margin-top: 30px; /* Add space above the footer */
-    text-align: left; /* Align footer text to the left */
+    text-align: center; /* Center footer text */
+    width: 80%; /* Control width */
+    max-width: 700px; /* Limit maximum width */
+}
+
+#footer-section a {
+    display: inline-block; /* Allows for margin on links */
+    margin: 0 10px;
 }
 
 /* Links */
