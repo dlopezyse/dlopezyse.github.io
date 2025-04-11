@@ -62,7 +62,10 @@
                                 listItem.classList.add("article-item"); // Add a class for styling
                                 listItem.innerHTML = `
                                     <span class="item-number">${index + 1}.</span>
-                                    <a href="${article.url}" class="article-title">${article.title}</a>
+                                    <div>
+                                        <a href="${article.url}" class="article-title">${article.title}</a>
+                                        <div class="article-subtitle">${article.subtitle}</div>
+                                    </div>
                                     <span class="article-date">${article.date}</span>
                                 `;
                                 articleList.appendChild(listItem);
