@@ -172,7 +172,7 @@ select option {
 }
 
 #footer-section a {
-    color: lime;
+    color: white;
     text-decoration: none;
     margin: 0 10px;
 }
@@ -182,7 +182,7 @@ select option {
 }
 
 .footer-label {
-    color: white; /* Style "BY:" and "FIND:" as white */
+    color: lime; /* Style "BY:" and "FIND:" */
     font-weight: bold; /* Make them stand out a bit more */
     margin-right: 5px;
 }
