@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+    background-color: black;
+    color: lime;
+    font-family: "Courier New", monospace;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Upper Section - Title & Subtitle */
+#upper-section {
+    padding: 40px 0;
+    border-bottom: 2px solid lime; /* Separation line */
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: 0 0 10px lime;
+    margin-bottom: 10px; /* Space between title and subtitle */
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: white;
+    text-shadow: 0 0 5px lime;
+}
+
+/* Blinking cursor */
+.cursor {
+    display: inline-block;
+    margin-left: -2px; /* Fix unwanted space */
+    color: lime !important; /* Ensure cursor is always lime */
+    font-weight: bold;
+    animation: blinkCursor 1s infinite;
+    letter-spacing: -2px; /* Remove extra spacing */
+}
+
+
+@keyframes blinkCursor {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Middle Section - Filter & Articles */
+#middle-section {
+    padding: 30px 20px; /* Add some horizontal padding */
+    border-bottom: none; /* Separation line */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+}
+
+#search-container {
+    margin-bottom: 20px; /* Space between filter and articles */
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Limit maximum width */
+    display: flex;
+    justify-content: center; /* Center the filter elements */
+    gap: 10px;
+}
+
+label {
+    color: white;
+}
+
+select {
+    background-color: #222; /* Darker background for contrast */
+    color: lime;
+    border: 1px solid lime;
+    padding: 8px 12px;
+    font-size: 1em;
+    border-radius: 5px; /* Slightly rounded corners */
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="lime" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5px;
+    padding-right: 25px; /* Adjust padding for the arrow */
+}
+
+/* Articles */
+#articles-title {
+    color: white;
+    font-size: 1.8em;
+    text-shadow: 0 0 8px lime;
+    margin-bottom: 20px;
+    width: 80%; /* Match filter width */
+    max-width: 600px;
+    text-align: left; /* Align title to the left */
+}
+
+#article-list {
+    list-style-type: none;
+    padding: 0;
+    width: 80%; /* Match filter width */
+    max-width: 600px;
+}
+
+.article-item {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
+    padding: 8px 15px;
+    margin-bottom: 8px;
+    background-color: #111; /* Dark background for each item */
+    border-left: 3px solid lime; /* Highlight bar */
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.article-item:hover {
+    background-color: #333;
+}
+
+.item-number {
+    color: #aaa; /* Light grey for the number */
+    margin-right: 15px;
+    font-size: 1em;
+}
+
+.article-title {
+    flex-grow: 1; /* Allow title to take up remaining space */
+    font-size: 1.1em;
+    color: lime;
+    text-decoration: none;
+}
+
+.article-title:hover {
+    text-shadow: 0 0 5px white;
+}
+
+.article-date {
+    color: #888; /* Grey for the date */
+    font-size: 0.9em;
+    margin-left: 15px;
+}
+
+.no-articles, .error-loading {
+    color: #f44336; /* Red for error/empty messages */
+    padding: 10px;
+    text-align: left;
+}
+
+/* Lower Section - Footer */
+#footer-section {
+    padding: 30px 0;
+    font-size: 1.1em;
+    border-top: 2px solid lime; /* Top border for the footer */
+    margin-top: 30px; /* Add space above the footer */
+}
+
+/* Links */
+a {
+    color: lime;
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 0 0 5px white;
+}
