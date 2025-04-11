@@ -171,6 +171,7 @@ select option {
     width: 80%;
     max-width: 500px; /* Smaller max-width for a block feel */
     background-color: #0a0a0a; /* Darker background */
+    color: lime; /* Default text color for the footer */
 }
 
 #footer-section a {
@@ -186,8 +187,9 @@ select option {
     margin: 5px 0;
 }
 
-.footer-prompt {
-    color: #888; /* Grey prompt */
+.footer-label {
+    color: white; /* Style "BY:" and "FIND:" as white */
+    font-weight: bold; /* Make them stand out a bit more */
     margin-right: 5px;
 }
 
