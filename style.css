@@ -162,18 +162,33 @@ select option {
 
 /* Lower Section - Footer */
 #footer-section {
-    padding: 30px 20px; /* Add horizontal padding */
-    font-size: 1.1em;
-    border-top: 2px solid lime; /* Top border for the footer */
-    margin-top: 30px; /* Add space above the footer */
-    text-align: center; /* Center footer text */
-    width: 80%; /* Control width */
-    max-width: 700px; /* Limit maximum width */
+    padding: 20px;
+    font-size: 1.0em;
+    border: 1px solid lime;
+    border-radius: 5px;
+    margin-top: 30px;
+    text-align: left; /* Align text to the left within the block */
+    width: 80%;
+    max-width: 500px; /* Smaller max-width for a block feel */
+    background-color: #0a0a0a; /* Darker background */
 }
 
 #footer-section a {
-    display: inline-block; /* Allows for margin on links */
-    margin: 0 10px;
+    color: lime;
+    text-decoration: none;
+}
+
+#footer-section a:hover {
+    text-shadow: 0 0 5px white;
+}
+
+#footer-section p {
+    margin: 5px 0;
+}
+
+.footer-prompt {
+    color: #888; /* Grey prompt */
+    margin-right: 5px;
 }
 
 /* Links */
