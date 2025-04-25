@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Wild Machines</title>
+     <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+
+     <div id="header">
+         <h1>Wild Machines</h1>
+         <p class="subtitle">A Blog to Navigate the AI Landscape</p>
+     </div>
+
+     <div id="content">
+         <div id="filter-container">
+             <label for="filter">Filter by topic:</label>
+             <select id="filter">
+                 <option value="all">All</option>
+                 <option value="AI & Society">AI & Society</option>
+                 <option value="Computer Vision">Computer Vision</option>
+                 <option value="Graphs">Graphs</option>
+                 <option value="Machine Learning">Machine Learning</option>
+                 <option value="NLP">NLP</option>
+                 <option value="Programming">Programming</option>
+             </select>
+         </div>
+
+         <div id="article-grid">
+             </div>
+     </div>
+
+     <div id="footer">
+         <p>
+             By: Diego López Yse |
+             <a href="https://github.com/dlopezyse" target="_blank">@GitHub</a> |
+             <a href="https://www.linkedin.com/in/lopezyse/" target="_blank">@LinkedIn</a>
+         </p>
+     </div>
+
+     <script>
+         document.addEventListener("DOMContentLoaded", function() {
+             const articleGrid = document.getElementById("article-grid");
+             const filter = document.getElementById("filter");
+
+             fetch("articles.json")
+                 .then(response => response.json())
+                 .then(articles => {
+                     function renderArticles(filterCategory) {
+                         articleGrid.innerHTML = "";
+
+                         articles
+                             .filter(article => filterCategory === "all" || article.category === filterCategory)
+                             .forEach(article => {
+                                 const articleDiv = document.createElement("div");
+                                 articleDiv.classList.add("article-card");
+
+                                 //  Assuming you'll add 'image' to articles.json
+                                 // "image": "path/to/your/image.jpg",
+                                 const imageSrc = article.image ? article.image : "placeholder.png"; // Default image
+
+                                 articleDiv.innerHTML = `
+                                     <img src="${imageSrc}" alt="${article.title}">
+                                     <div class="article-details">
+                                         <a href="${article.url}" class="article-title">${article.title}</a>
+                                         <p class="article-subtitle">${article.subtitle}</p>
+                                         <div class="article-meta">
+                                             <span class="article-date">${article.date}</span>
+                                             <span class="article-author">Diego López Yse</span>
+                                         </div>
+                                     </div>
+                                 `;
+                                 articleGrid.appendChild(articleDiv);
+                             });
+
+                         if (articleGrid.innerHTML === "") {
+                             articleGrid.innerHTML = "<p class='no-articles'>No articles found for this category.</p>";
+                         }
+                     }
+
+                     filter.addEventListener("change", () => {
+                         renderArticles(filter.value);
+                     });
+
+                     renderArticles("all");
+                 })
+                 .catch(error => {
+                     console.error("Error loading articles:", error);
+                     articleGrid.innerHTML = "<p class='error-loading'>Failed to load articles.</p>";
+                 });
+         });
+     </script>
+
+ </body>
+ </html>
