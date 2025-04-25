@@ -1,79 +1,144 @@
 /* General Styles */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-}
+ body {
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     margin: 0;
+     padding: 0;
+     background-color: #f9f9f9;
+     color: #333;
+     line-height: 1.6;
+ }
 
-/* Header */
-#header {
-    background-color: #fff;
-    text-align: center;
-    padding: 2rem 1rem;
-    border-bottom: 1px solid #eee;
-}
+ /* Header */
+ #header {
+     background-color: #fff;
+     text-align: center;
+     padding: 2rem 1rem;
+     border-bottom: 1px solid #eee;
+ }
 
-#header h1 {
-    margin-bottom: 0.5rem;
-    font-size: 2.2rem;
-    color: #222;
-    font-weight: 500;
-}
+ #header h1 {
+     margin-bottom: 0.5rem;
+     font-size: 2.2rem;
+     color: #222;
+     font-weight: 500;
+ }
 
-#header .subtitle {
-    color: #777;
-    font-size: 1.1rem;
-}
+ #header .subtitle {
+     color: #777;
+     font-size: 1.1rem;
+ }
 
-/* Content */
-#content {
-    max-width: 1000px;
-    margin: 1.5rem auto;
-    padding: 0 1rem;
-}
+ /* Content */
+ #content {
+     max-width: 1000px;
+     margin: 1.5rem auto;
+     padding: 0 1rem;
+ }
 
-/* Filter Container */
-#filter-container {
-    background-color: #fff;
-    padding: 0.6rem 1rem;
-    margin-bottom: 1.2rem;
-    border-bottom: 1px solid #eee;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
+ /* Filter Container */
+ #filter-container {
+     background-color: #fff;
+     padding: 0.6rem 1rem;
+     margin-bottom: 1.2rem;
+     border-bottom: 1px solid #eee;
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+ }
 
-#filter-container label {
-    margin-right: 0.6rem;
-    font-weight: 400;
-    color: #555;
-}
+ #filter-container label {
+     margin-right: 0.6rem;
+     font-weight: 400;
+     color: #555;
+ }
 
-#filter-container select {
-    padding: 0.3rem 0.7rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 0.95rem;
-}
+ #filter-container select {
+     padding: 0.3rem 0.7rem;
+     border: 1px solid #ccc;
+     border-radius: 6px;
+     font-size: 0.95rem;
+ }
 
-/* Article Grid */
-#article-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
-    align-items: start;
-}
+ /* Article Grid */
+ #article-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     gap: 1rem;
+     align-items: start; /* Align the top of the cards */
+ }
 
-/* Article Card */
-.article-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 1rem;
-    background-color: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(
+ /* Article Card */
+ .article-card {
+     background-color: #fff;
+     border-radius: 10px;
+     overflow: hidden;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+     display: grid; /* Use Grid for layout within the card */
+     grid-template-rows: auto auto 1fr auto; /* Title, Subtitle, Spacer, Date */
+     padding: 1rem;
+ }
+
+ .article-card:hover {
+     transform: translateY(-3px);
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+ }
+
+ .article-title {
+     font-size: 1.4rem;
+     color: #333;
+     text-decoration: none;
+     margin-bottom: 0.4rem;
+     transition: color 0.2s;
+     font-weight: 500;
+     grid-row: 1;
+     align-self: start;
+ }
+
+ .article-subtitle {
+     color: #666;
+     font-size: 0.95rem;
+     line-height: 1.5;
+     grid-row: 2;
+     align-self: start;
+     margin-bottom: 0; /* Remove default margin */
+ }
+
+ .article-date {
+     color: #999;
+     font-size: 0.9rem;
+     grid-row: 4;
+     align-self: end; /* Push to the bottom of the grid cell */
+ }
+
+ /* Footer */
+ #footer {
+     text-align: center;
+     padding: 1.2rem 1rem;
+     background-color: #f9f9f9;
+     border-top: 1px solid #eee;
+     margin-top: 2rem;
+ }
+
+ #footer p {
+     color: #777;
+     font-size: 0.85rem;
+ }
+
+ #footer a {
+     color: #007bff;
+     text-decoration: none;
+     margin: 0 0.5rem;
+ }
+
+ #footer a:hover {
+     text-decoration: underline;
+ }
+
+ /* No Articles/Error */
+ .no-articles, .error-loading {
+     padding: 1.2rem;
+     text-align: center;
+     color: #888;
+     font-size: 0.9rem;
+ }
