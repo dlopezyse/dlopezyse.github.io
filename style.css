@@ -64,7 +64,7 @@
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
      gap: 1rem;
-     align-items: start; /* Vertically align grid items to the start (top) */
+     /* align-items: start; Remove this */
  }
 
  /* Article Card */
@@ -76,7 +76,7 @@
      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
      display: flex;
      flex-direction: column;
-     height: auto;
+     height: 100%; /* Make cards the same height within a row */
  }
 
  .article-card:hover {
@@ -91,6 +91,8 @@
      align-items: flex-start;
      text-align: left;
      flex-grow: 1;
+     display: grid; /* Change to grid layout for internal alignment */
+     grid-template-rows: auto auto 1fr auto; /* Title, Subtitle, Spacer, Date */
  }
 
  .article-title {
@@ -100,23 +102,22 @@
      margin-bottom: 0.4rem;
      transition: color 0.2s;
      font-weight: 500;
- }
-
- .article-title:hover {
-     color: #007bff;
+     grid-row: 1; /* Ensure title is in the first row */
  }
 
  .article-subtitle {
      color: #666;
      font-size: 0.95rem;
-     margin-bottom: 0.8rem;
+     margin-bottom: 0; /* Remove default margin */
      line-height: 1.5;
+     grid-row: 2; /* Ensure subtitle is in the second row */
  }
 
  .article-date {
      color: #999;
      font-size: 0.9rem;
-     margin-top: auto;
+     grid-row: 4; /* Ensure date is in the fourth row */
+     margin-top: auto; /* Push to the bottom of its grid cell */
  }
 
  /* Footer */
