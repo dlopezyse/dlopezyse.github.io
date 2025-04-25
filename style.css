@@ -79,19 +79,13 @@
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
  }
 
- .article-card img {
-     width: 100%;
-     height: auto;
-     display: block;
- }
-
  .article-details {
      padding: 1rem;
      display: flex;
      flex-direction: column;
-     align-items: center; /* Center the content horizontally */
-     text-align: center; /* Center the text within the elements */
-     flex-grow: 1; /* Allow details to take up remaining space */
+     align-items: center;
+     text-align: center;
+     flex-grow: 1;
  }
 
  .article-title {
@@ -115,7 +109,7 @@
  .article-date {
      color: #888;
      font-size: 0.9rem;
-     margin-top: auto; /* Push the date to the bottom */
+     margin-top: auto;
  }
 
  /* Footer */
