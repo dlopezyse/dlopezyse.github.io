@@ -1,86 +1,87 @@
 /* General Styles */
  body {
-     font-family: 'Georgia', serif;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern sans-serif font */
      margin: 0;
      padding: 0;
-     background-color: #f4f4f4;
+     background-color: #f9f9f9; /* Slightly warmer light gray */
      color: #333;
-     line-height: 1.6;
+     line-height: 1.7; /* Improved readability */
  }
 
  /* Header */
  #header {
      background-color: #fff;
      text-align: center;
-     padding: 2rem 1rem;
-     border-bottom: 1px solid #ddd;
+     padding: 3rem 1rem; /* Increased padding */
+     border-bottom: 1px solid #eee; /* Lighter border */
  }
 
  #header h1 {
-     margin-bottom: 0.5rem;
-     font-size: 2.2rem;
+     margin-bottom: 0.75rem; /* Slightly more space */
+     font-size: 2.5rem; /* Slightly larger title */
      color: #222;
+     font-weight: 500; /* Semi-bold for a modern feel */
  }
 
  #header .subtitle {
-     color: #666;
-     font-size: 1.1rem;
+     color: #777; /* Slightly lighter subtitle color */
+     font-size: 1.15rem; /* Slightly larger subtitle */
  }
 
  /* Content */
  #content {
-     max-width: 960px;
-     margin: auto;
-     padding: 1rem;
+     max-width: 1000px; /* Slightly wider content area */
+     margin: 2rem auto; /* More top/bottom margin */
+     padding: 0 1rem;
  }
 
  /* Filter Container */
  #filter-container {
      background-color: #fff;
-     padding: 0.5rem;
-     margin-bottom: 1rem;
-     border-bottom: 1px solid #ddd;
+     padding: 0.75rem 1rem; /* Adjusted padding */
+     margin-bottom: 1.5rem; /* More space below filter */
+     border-bottom: 1px solid #eee; /* Lighter border */
      display: flex;
      align-items: center;
      justify-content: flex-start;
  }
 
  #filter-container label {
-     margin-right: 0.5rem;
-     font-weight: bold;
+     margin-right: 0.75rem; /* More space next to label */
+     font-weight: 400; /* Regular font weight */
+     color: #555;
  }
 
  #filter-container select {
-     padding: 0.25rem 0.5rem;
+     padding: 0.35rem 0.75rem; /* Adjusted padding */
      border: 1px solid #ccc;
-     border-radius: 4px;
+     border-radius: 6px; /* Slightly more rounded corners */
+     font-size: 1rem;
  }
 
  /* Article Grid */
  #article-grid {
      display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-     gap: 1rem;
+     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Slightly wider min width */
+     gap: 1.25rem; /* Increased gap */
  }
 
  /* Article Card */
  .article-card {
      background-color: #fff;
-     border-radius: 8px;
+     border-radius: 10px; /* More rounded corners */
      overflow: hidden;
-     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-     transition: transform 0.2s ease-in-out;
-     display: flex;
-     flex-direction: column;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Softer shadow */
+     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Transition for shadow too */
  }
 
  .article-card:hover {
-     transform: translateY(-3px);
-     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+     transform: translateY(-5px); /* Slightly more lift on hover */
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* More pronounced shadow on hover */
  }
 
  .article-details {
-     padding: 1rem;
+     padding: 1.25rem; /* Increased padding inside card */
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -89,42 +90,49 @@
  }
 
  .article-title {
-     font-size: 1.4rem;
-     color: #222;
+     font-size: 1.6rem; /* Slightly larger title */
+     color: #333;
      text-decoration: none;
-     margin-bottom: 0.5rem;
+     margin-bottom: 0.6rem; /* Adjusted margin */
      transition: color 0.2s;
+     font-weight: 500; /* Semi-bold */
  }
 
  .article-title:hover {
-     color: #0056b3;
+     color: #007bff; /* A more modern blue */
  }
 
  .article-subtitle {
      color: #666;
-     font-size: 1rem;
-     margin-bottom: 1rem;
+     font-size: 1.05rem; /* Slightly larger subtitle */
+     margin-bottom: 1.25rem; /* More space below subtitle */
+     line-height: 1.6; /* Improved subtitle readability */
  }
 
  .article-date {
-     color: #888;
-     font-size: 0.9rem;
+     color: #999; /* Lighter date color */
+     font-size: 0.95rem; /* Slightly larger date */
      margin-top: auto;
  }
 
  /* Footer */
  #footer {
      text-align: center;
-     padding: 1rem;
-     background-color: #fff;
-     border-top: 1px solid #ddd;
-     margin-top: 2rem;
+     padding: 1.5rem 1rem; /* Adjusted padding */
+     background-color: #f9f9f9; /* Match body background */
+     border-top: 1px solid #eee; /* Lighter border */
+     margin-top: 3rem; /* More top margin */
+ }
+
+ #footer p {
+     color: #777;
+     font-size: 0.9rem;
  }
 
  #footer a {
-     color: #0056b3;
+     color: #007bff; /* Modern blue for links */
      text-decoration: none;
-     margin: 0 0.5rem;
+     margin: 0 0.6rem; /* Adjusted link spacing */
  }
 
  #footer a:hover {
@@ -133,7 +141,8 @@
 
  /* No Articles/Error */
  .no-articles, .error-loading {
-     padding: 1rem;
+     padding: 1.5rem; /* Adjusted padding */
      text-align: center;
      color: #888;
+     font-size: 1rem;
  }
