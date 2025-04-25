@@ -64,7 +64,7 @@
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
      gap: 1rem;
-     align-items: start; /* Align the top of the cards */
+     align-items: stretch; /* Make all cards in a row the same height */
  }
 
  /* Article Card */
@@ -74,8 +74,8 @@
      overflow: hidden;
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-     display: grid; /* Use Grid for layout within the card */
-     grid-template-rows: auto auto 1fr auto; /* Title, Subtitle, Spacer, Date */
+     display: flex;
+     flex-direction: column;
      padding: 1rem;
  }
 
@@ -91,24 +91,21 @@
      margin-bottom: 0.4rem;
      transition: color 0.2s;
      font-weight: 500;
-     grid-row: 1;
-     align-self: start;
+     align-self: flex-start; /* Align to the top */
  }
 
  .article-subtitle {
      color: #666;
      font-size: 0.95rem;
      line-height: 1.5;
-     grid-row: 2;
-     align-self: start;
-     margin-bottom: 0; /* Remove default margin */
+     align-self: flex-start; /* Align below the title */
+     margin-bottom: auto; /* Push the date to the bottom */
  }
 
  .article-date {
      color: #999;
      font-size: 0.9rem;
-     grid-row: 4;
-     align-self: end; /* Push to the bottom of the grid cell */
+     align-self: flex-end; /* Align to the bottom */
  }
 
  /* Footer */
