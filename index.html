@@ -56,19 +56,14 @@
                                  const articleDiv = document.createElement("div");
                                  articleDiv.classList.add("article-card");
 
-                                 //  Assuming you'll add 'image' to articles.json
-                                 // "image": "path/to/your/image.jpg",
-                                 const imageSrc = article.image ? article.image : "placeholder.png"; // Default image
+                                 const imageSrc = article.image ? article.image : "placeholder.png";
 
                                  articleDiv.innerHTML = `
                                      <img src="${imageSrc}" alt="${article.title}">
                                      <div class="article-details">
                                          <a href="${article.url}" class="article-title">${article.title}</a>
                                          <p class="article-subtitle">${article.subtitle}</p>
-                                         <div class="article-meta">
-                                             <span class="article-date">${article.date}</span>
-                                             <span class="article-author">Diego López Yse</span>
-                                         </div>
+                                         <span class="article-date">${article.date}</span>
                                      </div>
                                  `;
                                  articleGrid.appendChild(articleDiv);
