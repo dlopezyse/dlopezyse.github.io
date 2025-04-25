@@ -64,7 +64,7 @@
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
      gap: 1rem;
-     align-items: start; /* Align the top of the cards */
+     align-items: start; /* Align the top of the cards in the grid */
  }
 
  /* Article Card */
@@ -74,9 +74,9 @@
      overflow: hidden;
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-     display: grid; /* Make the card a grid container */
-     grid-template-rows: auto auto 1fr auto; /* Title, Subtitle, Spacer, Date */
-     padding: 1rem; /* Add padding directly to the card */
+     display: flex;
+     flex-direction: column; /* Stack title, subtitle, date vertically */
+     padding: 1rem;
  }
 
  .article-card:hover {
@@ -91,24 +91,21 @@
      margin-bottom: 0.4rem;
      transition: color 0.2s;
      font-weight: 500;
-     grid-row: 1;
-     align-self: start; /* Align title to the top of its grid cell */
+     align-self: start; /* Align to the start (top) of the card */
  }
 
  .article-subtitle {
      color: #666;
      font-size: 0.95rem;
-     margin-bottom: 0; /* Remove default margin */
+     margin-bottom: auto; /* Push the date to the bottom */
      line-height: 1.5;
-     grid-row: 2;
-     align-self: start; /* Align subtitle to the top of its grid cell */
+     align-self: start; /* Align to the start (top) below the title */
  }
 
  .article-date {
      color: #999;
      font-size: 0.9rem;
-     grid-row: 4;
-     align-self: end; /* Align date to the bottom of its grid cell */
+     align-self: flex-end; /* Align to the end (bottom) of the card */
  }
 
  /* Footer */
