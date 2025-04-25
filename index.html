@@ -56,10 +56,7 @@
                                  const articleDiv = document.createElement("div");
                                  articleDiv.classList.add("article-card");
 
-                                 const imageSrc = article.image ? article.image : "placeholder.png";
-
                                  articleDiv.innerHTML = `
-                                     <img src="${imageSrc}" alt="${article.title}">
                                      <div class="article-details">
                                          <a href="${article.url}" class="article-title">${article.title}</a>
                                          <p class="article-subtitle">${article.subtitle}</p>
