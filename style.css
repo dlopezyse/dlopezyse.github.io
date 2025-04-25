@@ -1,138 +1,141 @@
 /* General Styles */
  body {
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern sans-serif font */
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
      margin: 0;
      padding: 0;
-     background-color: #f9f9f9; /* Slightly warmer light gray */
+     background-color: #f9f9f9;
      color: #333;
-     line-height: 1.7; /* Improved readability */
+     line-height: 1.6; /* Slightly reduced line height */
  }
 
  /* Header */
  #header {
      background-color: #fff;
      text-align: center;
-     padding: 3rem 1rem; /* Increased padding */
-     border-bottom: 1px solid #eee; /* Lighter border */
+     padding: 2rem 1rem; /* Reduced header padding */
+     border-bottom: 1px solid #eee;
  }
 
  #header h1 {
-     margin-bottom: 0.75rem; /* Slightly more space */
-     font-size: 2.5rem; /* Slightly larger title */
+     margin-bottom: 0.5rem; /* Reduced margin below title */
+     font-size: 2.2rem; /* Slightly smaller title */
      color: #222;
-     font-weight: 500; /* Semi-bold for a modern feel */
+     font-weight: 500;
  }
 
  #header .subtitle {
-     color: #777; /* Slightly lighter subtitle color */
-     font-size: 1.15rem; /* Slightly larger subtitle */
+     color: #777;
+     font-size: 1.1rem; /* Slightly smaller subtitle */
  }
 
  /* Content */
  #content {
-     max-width: 1000px; /* Slightly wider content area */
-     margin: 2rem auto; /* More top/bottom margin */
+     max-width: 1000px;
+     margin: 1.5rem auto; /* Reduced top margin */
      padding: 0 1rem;
  }
 
  /* Filter Container */
  #filter-container {
      background-color: #fff;
-     padding: 0.75rem 1rem; /* Adjusted padding */
-     margin-bottom: 1.5rem; /* More space below filter */
-     border-bottom: 1px solid #eee; /* Lighter border */
+     padding: 0.6rem 1rem; /* Reduced padding */
+     margin-bottom: 1.2rem; /* Reduced margin below filter */
+     border-bottom: 1px solid #eee;
      display: flex;
      align-items: center;
      justify-content: flex-start;
  }
 
  #filter-container label {
-     margin-right: 0.75rem; /* More space next to label */
-     font-weight: 400; /* Regular font weight */
+     margin-right: 0.6rem;
+     font-weight: 400;
      color: #555;
  }
 
  #filter-container select {
-     padding: 0.35rem 0.75rem; /* Adjusted padding */
+     padding: 0.3rem 0.7rem; /* Reduced padding */
      border: 1px solid #ccc;
-     border-radius: 6px; /* Slightly more rounded corners */
-     font-size: 1rem;
+     border-radius: 6px;
+     font-size: 0.95rem; /* Slightly smaller font */
  }
 
  /* Article Grid */
  #article-grid {
      display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Slightly wider min width */
-     gap: 1.25rem; /* Increased gap */
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted min width */
+     gap: 1rem; /* Reduced gap */
  }
 
  /* Article Card */
  .article-card {
      background-color: #fff;
-     border-radius: 10px; /* More rounded corners */
+     border-radius: 10px;
      overflow: hidden;
-     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Softer shadow */
-     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Transition for shadow too */
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+     display: flex;
+     flex-direction: column;
+     height: auto; /* Adjust height based on content */
  }
 
  .article-card:hover {
-     transform: translateY(-5px); /* Slightly more lift on hover */
-     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* More pronounced shadow on hover */
+     transform: translateY(-3px); /* Slightly less lift */
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
  }
 
  .article-details {
-     padding: 1.25rem; /* Increased padding inside card */
+     padding: 1rem; /* Reduced padding inside card */
      display: flex;
      flex-direction: column;
-     align-items: center;
-     text-align: center;
+     align-items: flex-start; /* Top alignment */
+     text-align: left; /* Left align text within */
      flex-grow: 1;
  }
 
  .article-title {
-     font-size: 1.6rem; /* Slightly larger title */
+     font-size: 1.4rem; /* Reduced title size */
      color: #333;
      text-decoration: none;
-     margin-bottom: 0.6rem; /* Adjusted margin */
+     margin-bottom: 0.4rem; /* Reduced margin */
      transition: color 0.2s;
-     font-weight: 500; /* Semi-bold */
+     font-weight: 500;
  }
 
  .article-title:hover {
-     color: #007bff; /* A more modern blue */
+     color: #007bff;
  }
 
  .article-subtitle {
      color: #666;
-     font-size: 1.05rem; /* Slightly larger subtitle */
-     margin-bottom: 1.25rem; /* More space below subtitle */
-     line-height: 1.6; /* Improved subtitle readability */
+     font-size: 0.95rem; /* Reduced subtitle size */
+     margin-bottom: 0.8rem; /* Reduced margin */
+     line-height: 1.5; /* Slightly reduced line height */
  }
 
  .article-date {
-     color: #999; /* Lighter date color */
-     font-size: 0.95rem; /* Slightly larger date */
-     margin-top: auto;
+     color: #999;
+     font-size: 0.9rem; /* Slightly reduced date size */
+     margin-top: auto; /* Keep date at the bottom */
  }
 
  /* Footer */
  #footer {
      text-align: center;
-     padding: 1.5rem 1rem; /* Adjusted padding */
-     background-color: #f9f9f9; /* Match body background */
-     border-top: 1px solid #eee; /* Lighter border */
-     margin-top: 3rem; /* More top margin */
+     padding: 1.2rem 1rem; /* Reduced padding */
+     background-color: #f9f9f9;
+     border-top: 1px solid #eee;
+     margin-top: 2rem; /* Reduced top margin */
  }
 
  #footer p {
      color: #777;
-     font-size: 0.9rem;
+     font-size: 0.85rem; /* Reduced font size */
  }
 
  #footer a {
-     color: #007bff; /* Modern blue for links */
+     color: #007bff;
      text-decoration: none;
-     margin: 0 0.6rem; /* Adjusted link spacing */
+     margin: 0 0.5rem; /* Reduced spacing */
  }
 
  #footer a:hover {
@@ -141,8 +144,8 @@
 
  /* No Articles/Error */
  .no-articles, .error-loading {
-     padding: 1.5rem; /* Adjusted padding */
+     padding: 1.2rem; /* Reduced padding */
      text-align: center;
      color: #888;
-     font-size: 1rem;
+     font-size: 0.9rem; /* Reduced font size */
  }
