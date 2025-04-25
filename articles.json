@@ -1,7 +1,7 @@
 [
      {
          "title": "Navigating the Vehicle Routing Problem (VRP) using Python",
-         "subtitle": "A deep dive XXXX",
+         "subtitle": "Exploring Algorithmic Solutions for Simplified Vehicle Routing",
          "category": "Graphs",
          "date": "2025-03-11",
          "url": "articles/Navigating-the-Vehicle-Routing-Problem--VRP--using-Python.html",
@@ -9,6 +9,7 @@
      },
      {
          "title": "Your Guide to Generative AI (GenAI)",
+          "subtitle": "Main concepts, opportunities, risks, and the future of GenAI",
          "category": "Machine Learning",
          "date": "2024-06-11",
          "url": "articles/Your-Guide-to-Generative-AI.html",
@@ -16,6 +17,7 @@
      },
      {
          "title": "The Problem of Simplification in Natural Language Processing (NLP)",
+         "subtitle": "How to accelerate understanding by reducing content complexity", 
          "category": "NLP",
          "date": "2021-09-05",
          "url": "articles/The-problem-of-Simplification-in-Natural-Language-Processing--NLP.html",
@@ -23,6 +25,7 @@
      },
      {
          "title": "NLP | Text Vectorization",
+         "subtitle": "How machines turn text into numbers to perform calculations", 
          "category": "NLP",
          "date": "2021-07-03",
          "url": "articles/NLP---Text-Vectorization.html",
