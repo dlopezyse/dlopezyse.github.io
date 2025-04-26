@@ -130,6 +130,15 @@ header p {
   color: var(--secondary-color);
 }
 
+footer {
+  border-top: 1px solid var(--border-color);
+  padding: 2rem 0;
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+  margin-top: var(--spacing);
+}
+
 @media (max-width: 768px) {
   :root {
     --spacing: 1rem;
