@@ -85,8 +85,8 @@
  }
 
  .article-title-container {
-     height: 4.5rem; /* Increased height for 3 lines */
-     margin-bottom: 0; /* Remove default margin */
+     max-height: 4.5rem; /* Maximum height for 3 lines */
+     margin-bottom: 0.4rem; /* Space between title and subtitle */
  }
 
  .article-title {
@@ -94,11 +94,11 @@
      color: #333;
      text-decoration: none;
      font-weight: 500;
-     display: -webkit-box; /* Enable CSS Multi-line truncation */
+     display: -webkit-box;
      -webkit-line-clamp: 3;
      -webkit-box-orient: vertical;
      overflow: hidden;
-     height: 100%; /* Take up the full height of the container */
+     height: auto; /* Adjust height based on content */
  }
 
  .article-subtitle {
@@ -106,7 +106,6 @@
      font-size: 0.95rem;
      line-height: 1.5;
      margin-bottom: auto; /* Push the date to the bottom */
-     margin-top: 0.4rem; /* Add space between title and subtitle */
  }
 
  .article-date {
