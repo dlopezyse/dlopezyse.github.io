@@ -111,34 +111,27 @@
      align-self: end; /* Align to the bottom */
  }
 
- /* Footer */
- #footer {
-     text-align: center;
-     padding: 1.2rem 1rem;
-     background-color: #f9f9f9;
-     border-top: 1px solid #eee;
-     margin-top: 2rem;
+ /* Ensure consistent height for the .article-details */
+ .article-details {
+     display: grid;
+     grid-template-rows: auto auto 1fr auto; /* Match the card's grid */
+     height: 100%; /* Make it take full height of the card */
  }
 
- #footer p {
-     color: #777;
-     font-size: 0.85rem;
+ .article-details > a.article-title {
+     grid-row: 1;
+     align-self: start;
+     margin-bottom: 0;
  }
 
- #footer a {
-     color: #007bff;
-     text-decoration: none;
-     margin: 0 0.5rem;
+ .article-details > p.article-subtitle {
+     grid-row: 2;
+     align-self: start;
+     margin-top: 1.6rem;
+     margin-bottom: 0;
  }
 
- #footer a:hover {
-     text-decoration: underline;
- }
-
- /* No Articles/Error */
- .no-articles, .error-loading {
-     padding: 1.2rem;
-     text-align: center;
-     color: #888;
-     font-size: 0.9rem;
+ .article-details > span.article-date {
+     grid-row: 4;
+     align-self: end;
  }
