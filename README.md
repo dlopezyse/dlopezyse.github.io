@@ -5,7 +5,6 @@ Welcome to [Wild Machines](https://dlopezyse.github.io/), my blog exploring AI, 
 ## 🚀 Features  
 ✔ **Dynamic Article Filtering** – Just browse your topic of preference.  
 ✔ **JSON-Powered Content** – No need to touch code; just update `articles.json` with new posts.  
-✔ **Cyber-Hacker UI** – A glowing neon interface with subtle animations for a hacker-style experience.  
 ✔ **Fully Responsive** – Works seamlessly on desktop and mobile.  
 
 ## Project Structure  
@@ -13,9 +12,8 @@ Welcome to [Wild Machines](https://dlopezyse.github.io/), my blog exploring AI, 
 | File/Folder     | Description |
 |----------------|------------|
 | 📂 `articles/` | Contains all blog post HTML files |
-| 📄 `index.html` | Main page (Hacker UI) |
+| 📄 `index.html` | Main page |
 | 🎨 `style.css` | Cyberpunk-style CSS |
-| 🚀 `script.js` | Handles dynamic filtering & JSON loading |
 | 📜 `articles.json` | List of blog posts (edit this to add new articles) |
 | 📘 `README.md` | You’re reading this now! |
 
