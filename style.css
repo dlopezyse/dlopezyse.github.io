@@ -1,139 +1,223 @@
 /* General Styles */
  body {
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background-color: black;
+     color: lime;
+     font-family: "Courier New", monospace;
+     text-align: center;
      margin: 0;
      padding: 0;
-     background-color: #f9f9f9;
-     color: #333;
-     line-height: 1.6;
- }
-
- /* Header */
- #header {
-     background-color: #fff;
-     text-align: center;
-     padding: 2rem 1rem;
-     border-bottom: 1px solid #eee;
- }
-
- #header h1 {
-     margin-bottom: 0.5rem;
-     font-size: 2.2rem;
-     color: #222;
-     font-weight: 500;
- }
-
- #header .subtitle {
-     color: #777;
-     font-size: 1.1rem;
- }
-
- /* Content */
- #content {
-     max-width: 1000px;
-     margin: 1.5rem auto;
-     padding: 0 1rem;
- }
-
- /* Filter Container */
- #filter-container {
-     background-color: #fff;
-     padding: 0.6rem 1rem;
-     margin-bottom: 1.2rem;
-     border-bottom: 1px solid #eee;
      display: flex;
+     flex-direction: column;
      align-items: center;
      justify-content: flex-start;
+     min-height: 100vh;
  }
 
- #filter-container label {
-     margin-right: 0.6rem;
-     font-weight: 400;
-     color: #555;
+ /* Upper Section */
+ #upper-section {
+     padding: 40px 20px;
+     border-bottom: 2px solid lime;
+     text-align: center;
+     width: 80%;
+     max-width: 700px;
  }
 
- #filter-container select {
-     padding: 0.3rem 0.7rem;
-     border: 1px solid #ccc;
-     border-radius: 6px;
-     font-size: 0.95rem;
+ h1 {
+     font-size: 2.5em;
+     text-shadow: 0 0 10px lime;
+     margin-bottom: 10px;
  }
 
- /* Article Grid */
- #article-grid {
+ .subtitle {
+     font-size: 1.2em;
+     color: white;
+     text-shadow: 0 0 5px lime;
+ }
+
+ .cursor {
+     display: inline-block;
+     margin-left: -2px;
+     color: lime !important;
+     font-weight: bold;
+     animation: blinkCursor 1s infinite;
+     letter-spacing: -2px;
+ }
+
+ @keyframes blinkCursor {
+     0% {
+         opacity: 1;
+     }
+
+     50% {
+         opacity: 0;
+     }
+
+     100% {
+         opacity: 1;
+     }
+ }
+
+ /* Middle Section */
+ #middle-section {
+     padding: 30px 20px;
+     border-bottom: none;
+     display: flex;
+     flex-direction: column;
+     align-items: stretch;
+     width: 80%;
+     max-width: 700px;
+ }
+
+ #search-container {
+     margin-bottom: 20px;
      display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-     gap: 1rem;
-     align-items: stretch; /* Make all cards in a row the same height */
+     grid-template-columns: auto 1fr;
+     align-items: center;
+     gap: 15px;
  }
 
- /* Article Card */
- .article-card {
-     background-color: #fff;
-     border-radius: 10px;
-     overflow: hidden;
-     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-     display: grid; /* Use Grid for layout within the card */
-     grid-template-rows: auto auto 1fr auto; /* Explicit rows: Title, Subtitle, Spacer, Date */
-     padding: 1rem;
+ label {
+     color: white;
+     text-align: left;
  }
 
- .article-card:hover {
-     transform: translateY(-3px);
-     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+ select {
+     background-color: #222;
+     color: lime;
+     border: 1px solid lime;
+     padding: 8px 12px;
+     font-size: 1em;
+     border-radius: 0;
+     appearance: none;
+     -webkit-appearance: none;
+     background-repeat: no-repeat;
+     background-position-x: 100%;
+     background-position-y: 5px;
+     padding-right: 25px;
+     width: 100%;
+ }
+
+ select option {
+     background-color: #222;
+     color: white;
+ }
+
+ #articles-title {
+     display: none;
+ }
+
+ #article-list {
+     list-style-type: none;
+     padding: 0;
+     display: grid; /* Grid container for article items */
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+     gap: 10px; /* Space between article items */
+     align-items: stretch; /* Make all items the same height */
+ }
+
+ .article-item {
+     display: grid; /* Grid container for content within each item */
+     grid-template-rows: auto auto 1fr auto; /* Title, Subtitle, Spacer, Date */
+     grid-template-columns: 3em 1fr auto; /* Number | Title & Subtitle | Date */
+     align-items: start;
+     padding: 8px 15px;
+     background-color: #111;
+     border-left: none;
+     border-radius: 0;
+ }
+
+ .article-item:hover {
+     background-color: #333;
+ }
+
+ .item-number {
+     color: #888;
+     font-size: 1em;
+     text-align: right;
+     padding-right: 10px;
+     padding-top: 2px;
+     grid-row: 1 / 5; /* Span all rows */
+     grid-column: 1;
  }
 
  .article-title {
-     font-size: 1.4rem;
-     color: #333;
+     font-size: 1.1em;
+     color: lime;
      text-decoration: none;
-     font-weight: 500;
-     grid-row: 1;
-     align-self: start;
+     text-align: left;
      margin-bottom: 0; /* Remove default margin */
+     grid-row: 1;
+     grid-column: 2;
+ }
+
+ .article-title:hover {
+     text-shadow: 0 0 5px white;
  }
 
  .article-subtitle {
-     color: #666;
-     font-size: 0.95rem;
-     line-height: 1.5;
-     grid-row: 2; /* Force subtitle to the second row */
-     align-self: start;
-     margin-top: 0; /* Remove default top margin */
-     padding-top: 0.6rem; /* Add consistent top padding for visual alignment */
-     margin-bottom: 0; /* Remove default bottom margin */
+     color: #aaa;
+     font-size: 0.9em;
+     text-align: left;
+     margin-top: 0.6rem; /* Consistent top spacing */
+     margin-bottom: 0; /* Remove default margin */
+     grid-row: 2;
+     grid-column: 2;
  }
 
  .article-date {
-     color: #999;
-     font-size: 0.9rem;
+     color: #aaa;
+     font-size: 0.9em;
+     text-align: right;
+     padding-top: 2px;
      grid-row: 4;
-     align-self: end; /* Align to the bottom */
- }
-
- /* Ensure consistent height for the .article-details */
- .article-details {
-     display: grid;
-     grid-template-rows: auto auto 1fr auto; /* Match the card's grid */
-     height: 100%; /* Make it take full height of the card */
- }
-
- .article-details > a.article-title {
-     grid-row: 1;
-     align-self: start;
-     margin-bottom: 0;
- }
-
- .article-details > p.article-subtitle {
-     grid-row: 2;
-     align-self: start;
-     margin-top: 0;
-     padding-top: 0.6rem; /* Force visual alignment */
-     margin-bottom: 0;
- }
-
- .article-details > span.article-date {
-     grid-row: 4;
+     grid-column: 3;
      align-self: end;
+ }
+
+ .no-articles,
+ .error-loading {
+     color: #f44336;
+     padding: 10px;
+     text-align: left;
+ }
+
+ /* Lower Section */
+ #footer-section {
+     padding: 30px 0;
+     font-size: 1.1em;
+     border-top: 2px solid lime;
+     margin-top: 30px;
+     text-align: center;
+     width: 80%;
+     max-width: 700px;
+ }
+
+ .footer-label {
+     color: lime;
+     font-weight: bold;
+     margin-right: 5px;
+ }
+
+ .footer-name {
+     color: white;
+ }
+
+ .footer-link {
+     color: white;
+     text-decoration: none;
+     margin: 0 10px;
+ }
+
+ .footer-link:hover {
+     text-shadow: 0 0 5px white;
+ }
+
+ /* Links */
+ a {
+     color: lime;
+     text-decoration: none;
+ }
+
+ a:hover {
+     text-shadow: 0 0 5px white;
  }
