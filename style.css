@@ -74,8 +74,8 @@
      overflow: hidden;
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-     display: grid; /* Use Grid for layout within the card */
-     grid-template-rows: auto auto 1fr auto; /* Title, Subtitle, Spacer, Date */
+     display: flex;
+     flex-direction: column;
      padding: 1rem;
  }
 
@@ -89,49 +89,53 @@
      color: #333;
      text-decoration: none;
      font-weight: 500;
-     grid-row: 1;
-     align-self: start;
-     margin-bottom: 0; /* Remove default margin */
+     align-self: flex-start; /* Align to the top */
+     margin-bottom: 0.4rem; /* Space between title and subtitle */
  }
 
  .article-subtitle {
      color: #666;
      font-size: 0.95rem;
      line-height: 1.5;
-     grid-row: 2; /* Explicitly place subtitle in the second row */
-     align-self: start;
-     margin-top: 1.6rem; /* Consistent top margin to align subtitles */
-     margin-bottom: 0; /* Remove default margin */
+     align-self: flex-start; /* Align below the title */
+     margin-bottom: auto; /* Push the date to the bottom */
+     padding-top: 0.6rem; /* Consistent top padding for alignment */
  }
 
  .article-date {
      color: #999;
      font-size: 0.9rem;
-     grid-row: 4;
-     align-self: end; /* Align to the bottom */
+     align-self: flex-end; /* Align to the bottom */
  }
 
- /* Ensure consistent height for the .article-details */
- .article-details {
-     display: grid;
-     grid-template-rows: auto auto 1fr auto; /* Match the card's grid */
-     height: 100%; /* Make it take full height of the card */
+ /* Footer */
+ #footer {
+     text-align: center;
+     padding: 1.2rem 1rem;
+     background-color: #f9f9f9;
+     border-top: 1px solid #eee;
+     margin-top: 2rem;
  }
 
- .article-details > a.article-title {
-     grid-row: 1;
-     align-self: start;
-     margin-bottom: 0;
+ #footer p {
+     color: #777;
+     font-size: 0.85rem;
  }
 
- .article-details > p.article-subtitle {
-     grid-row: 2;
-     align-self: start;
-     margin-top: 1.6rem;
-     margin-bottom: 0;
+ #footer a {
+     color: #007bff;
+     text-decoration: none;
+     margin: 0 0.5rem;
  }
 
- .article-details > span.article-date {
-     grid-row: 4;
-     align-self: end;
+ #footer a:hover {
+     text-decoration: underline;
+ }
+
+ /* No Articles/Error */
+ .no-articles, .error-loading {
+     padding: 1.2rem;
+     text-align: center;
+     color: #888;
+     font-size: 0.9rem;
  }
