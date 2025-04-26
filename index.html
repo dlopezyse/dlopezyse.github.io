@@ -43,9 +43,6 @@
         .forEach(article => {
           grid.innerHTML += `
             <article class="article-card">
-              <a href="${article.url}">
-                <img src="${article.image}" alt="${article.title}">
-              </a>
               <a class="article-title" href="${article.url}">${article.title}</a>
               <div class="article-subtitle">${article.subtitle || ''}</div>
               <div class="article-meta">${article.category} &middot; ${article.date}</div>
