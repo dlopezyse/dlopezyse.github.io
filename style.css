@@ -7,7 +7,7 @@
   --bg-color: #fff;
   --card-bg: #fafbfc;
   --border-color: #e0e0e0;
-  --max-width: 1000px; /* Increased max-width for 3 columns */
+  --max-width: 1000px;
   --spacing: 2rem;
   --radius: 8px;
   --shadow: 0 2px 8px rgba(0,0,0,0.03);
@@ -38,6 +38,18 @@ header h1 {
   font-size: 2.5rem;
   font-weight: 700;
   letter-spacing: -0.03em;
+  position: relative; /* Required for absolute positioning of the cursor */
+}
+
+header h1::after {
+  content: " |"; /* The cursor */
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
 
 header p {
@@ -75,7 +87,7 @@ header p {
 
 #article-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted minmax for 3 columns */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: var(--spacing);
   max-width: var(--max-width);
   margin: 0 auto var(--spacing) auto;
@@ -110,7 +122,7 @@ header p {
 .article-subtitle {
   color: var(--secondary-color);
   font-size: 1.05rem;
-  margin-top: auto; /* Push to the bottom */
+  margin-top: auto;
 }
 
 .article-meta {
@@ -125,7 +137,6 @@ header p {
   }
 
   #article-grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjust for mobile */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 }
-
