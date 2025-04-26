@@ -74,8 +74,8 @@
      overflow: hidden;
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-     display: grid; /* Use Grid for layout within the card */
-     grid-template-rows: auto auto 1fr auto; /* Explicit rows: Title, Subtitle, Spacer, Date */
+     display: flex;
+     flex-direction: column;
      padding: 1rem;
  }
 
@@ -89,51 +89,56 @@
      color: #333;
      text-decoration: none;
      font-weight: 500;
-     grid-row: 1;
-     align-self: start;
-     margin-bottom: 0; /* Remove default margin */
+     align-self: flex-start;
+     margin-bottom: 0;
+     line-height: 1.5; /* Set a specific line height */
+     max-height: 4.5rem; /* Limit to a maximum of 3 lines (adjust based on line-height) */
+     overflow: hidden;
  }
 
  .article-subtitle {
      color: #666;
      font-size: 0.95rem;
      line-height: 1.5;
-     grid-row: 2; /* Force subtitle to the second row */
-     align-self: start;
-     margin-top: 0; /* Remove default top margin */
-     padding-top: 0.6rem; /* Add consistent top padding for visual alignment */
-     margin-bottom: 0; /* Remove default bottom margin */
+     align-self: flex-start;
+     margin-bottom: auto;
+     padding-top: calc(1.4rem * 1.5 + 0.4rem); /* Push down by title height + margin */
  }
 
  .article-date {
      color: #999;
      font-size: 0.9rem;
-     grid-row: 4;
-     align-self: end; /* Align to the bottom */
+     align-self: flex-end;
  }
 
- /* Ensure consistent height for the .article-details */
- .article-details {
-     display: grid;
-     grid-template-rows: auto auto 1fr auto; /* Match the card's grid */
-     height: 100%; /* Make it take full height of the card */
+ /* Footer */
+ #footer {
+     text-align: center;
+     padding: 1.2rem 1rem;
+     background-color: #f9f9f9;
+     border-top: 1px solid #eee;
+     margin-top: 2rem;
  }
 
- .article-details > a.article-title {
-     grid-row: 1;
-     align-self: start;
-     margin-bottom: 0;
+ #footer p {
+     color: #777;
+     font-size: 0.85rem;
  }
 
- .article-details > p.article-subtitle {
-     grid-row: 2;
-     align-self: start;
-     margin-top: 0;
-     padding-top: 0.6rem; /* Force visual alignment */
-     margin-bottom: 0;
+ #footer a {
+     color: #007bff;
+     text-decoration: none;
+     margin: 0 0.5rem;
  }
 
- .article-details > span.article-date {
-     grid-row: 4;
-     align-self: end;
+ #footer a:hover {
+     text-decoration: underline;
+ }
+
+ /* No Articles/Error */
+ .no-articles, .error-loading {
+     padding: 1.2rem;
+     text-align: center;
+     color: #888;
+     font-size: 0.9rem;
  }
