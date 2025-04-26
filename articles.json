@@ -1,174 +1,150 @@
 [
-     {
-         "title": "Navigating the Vehicle Routing Problem (VRP) using Python",
-         "subtitle": "Exploring Algorithmic Solutions for Simplified Vehicle Routing",
-         "category": "Graphs",
-         "date": "2025-03-11",
-         "url": "articles/Navigating-the-Vehicle-Routing-Problem--VRP--using-Python.html",
-         "image": "images/vrp.jpg"  
-     },
-     {
-         "title": "Your Guide to Generative AI (GenAI)",
-          "subtitle": "Main concepts, opportunities, risks, and the future of GenAI",
-         "category": "Machine Learning",
-         "date": "2024-06-11",
-         "url": "articles/Your-Guide-to-Generative-AI.html",
-         "image": "images/genai.jpg"
-     },
-     {
-         "title": "The Problem of Simplification in Natural Language Processing (NLP)",
-         "subtitle": "How to accelerate understanding by reducing content complexity", 
-         "category": "NLP",
-         "date": "2021-09-05",
-         "url": "articles/The-problem-of-Simplification-in-Natural-Language-Processing--NLP.html",
-         "image": "images/nlp.jpg"
-     },
-     {
-         "title": "NLP | Text Vectorization",
-         "subtitle": "How machines turn text into numbers to perform calculations", 
-         "category": "NLP",
-         "date": "2021-07-03",
-         "url": "articles/NLP---Text-Vectorization.html",
-         "image": "images/text_vectorization.jpg"
-     },
-     {
-         "title": "Your Guide to Perceptrons",
-         "category": "Machine Learning",
-         "date": "2021-03-03",
-         "url": "articles/Your-guide-to-Perceptrons.html",
-         "image": "images/perceptrons.jpg"
-     },
-     {
-         "title": "Text Normalization for Natural Language Processing (NLP)",
-         "category": "NLP",
-         "date": "2021-02-17",
-         "url": "articles/Text-Normalization-for-Natural-Language-Processing--NLP.html",
-         "image": "images/text_normalization.jpg"
-     },
-     {
-         "title": "How to Begin Your NLP Journey",
-         "category": "NLP",
-         "date": "2021-01-26",
-         "url": "articles/How-to-Begin-Your-NLP-Journey.html",
-         "image": "images/nlp_journey.jpg"
-     },
-     {
-         "title": "The Illusion of Choice",
-         "category": "AI & Society",
-         "date": "2020-09-17",
-         "url": "articles/The-illusion-of-choice.html",
-         "image": "images/illusion_choice.jpg"
-     },
-     {
-         "title": "AI Has Become So Human That You Can't Tell the Difference",
-         "category": "AI & Society",
-         "date": "2020-09-17",
-         "url": "articles/AI-Has-Become-So-Human--That-You-Can-t-Tell-the-Difference.html",
-         "image": "images/ai_human.jpg"
-     },
-     {
-         "title": "The Secret Weapons of Fake News",
-         "category": "AI & Society",
-         "date": "2020-09-15",
-         "url": "articles/The-Secret-Weapons-of-Fake-News.html",
-         "image": "images/fake_news.jpg"
-     },
-     {
-         "title": "Your Guide to Linear Regression Models",
-         "category": "Machine Learning",
-         "date": "2020-09-08",
-         "url": "articles/Your-Guide-to-Linear-Regression-Models.html",
-         "image": "images/linear_regression.jpg"
-     },
-     {
-         "title": "Algorithms of Social Manipulation",
-         "category": "AI & Society",
-         "date": "2020-09-05",
-         "url": "articles/Algorithms-of-Social-Manipulation.html",
-         "image": "images/social_manipulation.jpg"
-     },
-     {
-         "title": "Modelling Regression Trees",
-         "category": "Machine Learning",
-         "date": "2020-06-16",
-         "url": "articles/Modelling-Regression-Trees.html",
-         "image": "images/regression_trees.jpg"
-     },
-     {
-         "title": "Modelling Classification Trees",
-         "category": "Machine Learning",
-         "date": "2020-05-19",
-         "url": "articles/Modelling-Classification-Trees.html",
-         "image": "images/classification_trees.jpg"
-     },
-     {
-         "title": "How to Prepare your Data",
-         "category": "Machine Learning",
-         "date": "2020-05-10",
-         "url": "articles/How-to-Prepare-your-Data.html",
-         "image": "images/prepare_data.jpg"
-     },
-     {
-         "title": "Exploratory Data Analysis on Steroids",
-         "category": "Machine Learning",
-         "date": "2020-04-30",
-         "url": "articles/Exploratory-Data-Analysis-on-Steroids.html",
-         "image": "images/eda_steroids.jpg"
-     },
-     {
-         "title": "Before Probability Distributions",
-         "category": "Machine Learning",
-         "date": "2020-03-16",
-         "url": "articles/Before-Probability-Distributions.html",
-         "image": "images/probability_distributions.jpg"
-     },
-     {
-         "title": "Essential-Programming | Sorting Algorithms",
-         "category": "Programming",
-         "date": "2020-01-23",
-         "url": "articles/Essential-Programming---Sorting-Algorithms.html",
-         "image": "images/sorting_algorithms.jpg"
-     },
-     {
-         "title": "Essential Programming | Control Structures",
-         "category": "Programming",
-         "date": "2020-01-22",
-         "url": "articles/Essential-Programming---Control-Structures.html",
-         "image": "images/control_structures.jpg"
-     },
-     {
-         "title": "Essential Programming | Time Complexity",
-         "category": "Programming",
-         "date": "2020-01-17",
-         "url": "articles/Essential-Programming---Time-Complexity.html",
-         "image": "images/time_complexity.jpg"
-     },
-     {
-         "title": "The Complete Guide to Decision Trees",
-         "category": "Machine Learning",
-         "date": "2019-04-17",
-         "url": "articles/The-Complete-Guide-to-Decision-Trees.html",
-         "image": "images/decision_trees.jpg"
-     },
-     {
-         "title": "The Anatomy of K-means",
-         "category": "Machine Learning",
-         "date": "2019-02-21",
-         "url": "articles/The-Anatomy-of-K-means.html",
-         "image": "images/k_means.jpg"
-     },
-     {
-         "title": "Your Guide to Natural Language Processing (NLP)",
-         "category": "NLP",
-         "date": "2019-01-15",
-         "url": "articles/Your-Guide-to-Natural-Language-Processing-NLP.html",
-         "image": "images/nlp_guide.jpg"
-     },
-     {
-         "title": "Computer Vision for Precision Agriculture",
-         "category": "Computer Vision",
-         "date": "2019-01-03",
-         "url": "articles/Computer-Vision-for-Precision-Agriculture.html",
-         "image": "images/computer_vision.jpg"
-     }
+  {
+   "title": "Navigating the Vehicle Routing Problem (VRP) using Python",
+   "subtitle": "Exploring Algorithmic Solutions for Simplified Vehicle Routing",
+   "category": "Graphs",
+   "date": "2025-03-11",
+   "url": "articles/Navigating-the-Vehicle-Routing-Problem--VRP--using-Python.html"
+  },
+  {
+   "title": "Your Guide to Generative AI (GenAI)",
+   "subtitle": "Main concepts, opportunities, risks, and the future of GenAI",
+   "category": "Machine Learning",
+   "date": "2024-06-11",
+   "url": "articles/Your-Guide-to-Generative-AI.html"
+  },
+  {
+   "title": "The Problem of Simplification in Natural Language Processing (NLP)",
+   "subtitle": "How to accelerate understanding by reducing content complexity",
+   "category": "NLP",
+   "date": "2021-09-05",
+   "url": "articles/The-problem-of-Simplification-in-Natural-Language-Processing--NLP.html"
+  },
+  {
+   "title": "NLP | Text Vectorization",
+   "subtitle": "How machines turn text into numbers to perform calculations",
+   "category": "NLP",
+   "date": "2021-07-03",
+   "url": "articles/NLP---Text-Vectorization.html"
+  },
+  {
+   "title": "Your Guide to Perceptrons",
+   "category": "Machine Learning",
+   "date": "2021-03-03",
+   "url": "articles/Your-guide-to-Perceptrons.html"
+  },
+  {
+   "title": "Text Normalization for Natural Language Processing (NLP)",
+   "category": "NLP",
+   "date": "2021-02-17",
+   "url": "articles/Text-Normalization-for-Natural-Language-Processing--NLP.html"
+  },
+  {
+   "title": "How to Begin Your NLP Journey",
+   "category": "NLP",
+   "date": "2021-01-26",
+   "url": "articles/How-to-Begin-Your-NLP-Journey.html"
+  },
+  {
+   "title": "The Illusion of Choice",
+   "category": "AI & Society",
+   "date": "2020-09-17",
+   "url": "articles/The-illusion-of-choice.html"
+  },
+  {
+   "title": "AI Has Become So Human That You Can't Tell the Difference",
+   "category": "AI & Society",
+   "date": "2020-09-17",
+   "url": "articles/AI-Has-Become-So-Human--That-You-Can-t-Tell-the-Difference.html"
+  },
+  {
+   "title": "The Secret Weapons of Fake News",
+   "category": "AI & Society",
+   "date": "2020-09-15",
+   "url": "articles/The-Secret-Weapons-of-Fake-News.html"
+  },
+  {
+   "title": "Your Guide to Linear Regression Models",
+   "category": "Machine Learning",
+   "date": "2020-09-08",
+   "url": "articles/Your-Guide-to-Linear-Regression-Models.html"
+  },
+  {
+   "title": "Algorithms of Social Manipulation",
+   "category": "AI & Society",
+   "date": "2020-09-05",
+   "url": "articles/Algorithms-of-Social-Manipulation.html"
+  },
+  {
+   "title": "Modelling Regression Trees",
+   "category": "Machine Learning",
+   "date": "2020-06-16",
+   "url": "articles/Modelling-Regression-Trees.html"
+  },
+  {
+   "title": "Modelling Classification Trees",
+   "category": "Machine Learning",
+   "date": "2020-05-19",
+   "url": "articles/Modelling-Classification-Trees.html"
+  },
+  {
+   "title": "How to Prepare your Data",
+   "category": "Machine Learning",
+   "date": "2020-05-10",
+   "url": "articles/How-to-Prepare-your-Data.html"
+  },
+  {
+   "title": "Exploratory Data Analysis on Steroids",
+   "category": "Machine Learning",
+   "date": "2020-04-30",
+   "url": "articles/Exploratory-Data-Analysis-on-Steroids.html"
+  },
+  {
+   "title": "Before Probability Distributions",
+   "category": "Machine Learning",
+   "date": "2020-03-16",
+   "url": "articles/Before-Probability-Distributions.html"
+  },
+  {
+   "title": "Essential-Programming | Sorting Algorithms",
+   "category": "Programming",
+   "date": "2020-01-23",
+   "url": "articles/Essential-Programming---Sorting-Algorithms.html"
+  },
+  {
+   "title": "Essential Programming | Control Structures",
+   "category": "Programming",
+   "date": "2020-01-22",
+   "url": "articles/Essential-Programming---Control-Structures.html"
+  },
+  {
+   "title": "Essential Programming | Time Complexity",
+   "category": "Programming",
+   "date": "2020-01-17",
+   "url": "articles/Essential-Programming---Time-Complexity.html"
+  },
+  {
+   "title": "The Complete Guide to Decision Trees",
+   "category": "Machine Learning",
+   "date": "2019-04-17",
+   "url": "articles/The-Complete-Guide-to-Decision-Trees.html"
+  },
+  {
+   "title": "The Anatomy of K-means",
+   "category": "Machine Learning",
+   "date": "2019-02-21",
+   "url": "articles/The-Anatomy-of-K-means.html"
+  },
+  {
+   "title": "Your Guide to Natural Language Processing (NLP)",
+   "category": "NLP",
+   "date": "2019-01-15",
+   "url": "articles/Your-Guide-to-Natural-Language-Processing-NLP.html"
+  },
+  {
+   "title": "Computer Vision for Precision Agriculture",
+   "category": "Computer Vision",
+   "date": "2019-01-03",
+   "url": "articles/Computer-Vision-for-Precision-Agriculture.html"
+  }
  ]
