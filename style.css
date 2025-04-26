@@ -74,8 +74,8 @@
      overflow: hidden;
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-     display: flex;
-     flex-direction: column;
+     display: grid; /* Use Grid for layout within the card */
+     grid-template-rows: auto auto 1fr auto; /* Title, Subtitle, Spacer, Date */
      padding: 1rem;
  }
 
@@ -84,34 +84,31 @@
      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
  }
 
- .article-title-container {
-     max-height: 4.5rem; /* Maximum height for 3 lines */
-     margin-bottom: 0.4rem; /* Space between title and subtitle */
- }
-
  .article-title {
      font-size: 1.4rem;
      color: #333;
      text-decoration: none;
      font-weight: 500;
-     display: -webkit-box;
-     -webkit-line-clamp: 3;
-     -webkit-box-orient: vertical;
-     overflow: hidden;
-     height: auto; /* Adjust height based on content */
+     grid-row: 1;
+     align-self: start;
+     margin-bottom: 0; /* Remove default margin */
  }
 
  .article-subtitle {
      color: #666;
      font-size: 0.95rem;
      line-height: 1.5;
-     margin-bottom: auto; /* Push the date to the bottom */
+     grid-row: 2; /* Explicitly place subtitle in the second row */
+     align-self: start;
+     margin-top: 1.6rem; /* Consistent top margin to align subtitles */
+     margin-bottom: 0; /* Remove default margin */
  }
 
  .article-date {
      color: #999;
      font-size: 0.9rem;
-     align-self: flex-end;
+     grid-row: 4;
+     align-self: end; /* Align to the bottom */
  }
 
  /* Footer */
