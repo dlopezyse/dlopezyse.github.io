@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Technical Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>AI Technical Blog</h1>
+    <p>Insights, tutorials, and explorations in AI, ML, NLP, and more.</p>
+  </header>
+
+  <nav id="filter-container">
+    <button class="filter-btn active" data-filter="All">All</button>
+    <button class="filter-btn" data-filter="AI & Society">AI & Society</button>
+    <button class="filter-btn" data-filter="Computer Vision">Computer Vision</button>
+    <button class="filter-btn" data-filter="Graphs">Graphs</button>
+    <button class="filter-btn" data-filter="Machine Learning">Machine Learning</button>
+    <button class="filter-btn" data-filter="NLP">NLP</button>
+    <button class="filter-btn" data-filter="Programming">Programming</button>
+  </nav>
+
+  <main>
+    <section id="article-grid"></section>
+  </main>
+
+  <script>
+    // Fetch and render articles
+    async function loadArticles() {
+      const res = await fetch('articles.json');
+      const articles = await res.json();
+      renderArticles(articles);
+      setupFilters(articles);
+    }
+
+    function renderArticles(articles, filter = "All") {
+      const grid = document.getElementById('article-grid');
+      grid.innerHTML = '';
+      articles
+        .filter(a => filter === "All" || a.category === filter)
+        .forEach(article => {
+          grid.innerHTML += `
+            <article class="article-card">
+              <a href="${article.url}">
+                <img src="${article.image}" alt="${article.title}">
+              </a>
+              <a class="article-title" href="${article.url}">${article.title}</a>
+              <div class="article-subtitle">${article.subtitle || ''}</div>
+              <div class="article-meta">${article.category} &middot; ${article.date}</div>
+            </article>
+          `;
+        });
+    }
+
+    function setupFilters(articles) {
+      const buttons = document.querySelectorAll('.filter-btn');
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          renderArticles(articles, btn.dataset.filter);
+        });
+      });
+    }
+
+    loadArticles();
+  </script>
+</body>
+</html>
