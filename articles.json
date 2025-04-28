@@ -14,6 +14,34 @@
    "url": "articles/Your-Guide-to-Generative-AI.html"
   },
   {
+   "title": "Biomolecular Analysis with Python",
+   "subtitle": "Characterize molecules, visualize them in 2D & 3D, perform similarity analysis and get their properties",
+   "category": "Machine Learning",
+   "date": "2022-10-06",
+   "url": "articles/Biomolecular-Analysis-with-Python.html"
+  },
+  {
+   "title": "From Atoms to Amino Acids",
+   "subtitle": "Explore the fundamental building blocks of all living organisms",
+   "category": "AI & Society",
+   "date": "2022-10-06",
+   "url": "articles/From-Atoms-to-Amino-Acids.html"
+  },
+  {
+   "title": "Data Trading",
+   "subtitle": "Understand the fundamentals behind the global trade of digital data",
+   "category": "AI & Society",
+   "date": "2022-01-19",
+   "url": "articles/Data-Trading.html"
+  },
+  {
+   "title": "Paraphrasing in Natural Language Processing (NLP)",
+   "subtitle": "How Paraphrase Generation techniques can be used and measured",
+   "category": "NLP",
+   "date": "2022-01-17",
+   "url": "articles/Paraphrasing-in-Natural-Language-Processing--NLP.html"
+  },
+  {
    "title": "The Problem of Simplification in Natural Language Processing (NLP)",
    "subtitle": "How to accelerate understanding by reducing content complexity",
    "category": "NLP",
