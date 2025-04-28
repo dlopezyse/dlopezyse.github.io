@@ -29,21 +29,21 @@
   },
   {
    "title": "Your Guide to Perceptrons",
-   "subtitle": "The building blocks of Deep Learning",
+   "subtitle": "Discover the building blocks that power today's Deep Learning models",
    "category": "Machine Learning",
    "date": "2021-03-03",
    "url": "articles/Your-guide-to-Perceptrons.html"
   },
   {
    "title": "Text Normalization for Natural Language Processing (NLP)",
-   "subtitle": "Stemming and lemmatization with Python", 
+   "subtitle": "Master stemming and lemmatization techniques for NLP using Python", 
    "category": "NLP",
    "date": "2021-02-17",
    "url": "articles/Text-Normalization-for-Natural-Language-Processing--NLP.html"
   },
   {
    "title": "How to Begin Your NLP Journey",
-   "subtitle": "Learn how to process text using Python", 
+   "subtitle": "Learn the basics of text processing and Natural Language Processing with Python", 
    "category": "NLP",
    "date": "2021-01-26",
    "url": "articles/How-to-Begin-Your-NLP-Journey.html"
@@ -99,14 +99,14 @@
   },
   {
    "title": "How to Prepare your Data",
-   "subtitle": "Structuring, cleaning, and enriching raw data", 
+   "subtitle": "Learn to structure, clean, and enrich raw data for Data Science projects", 
    "category": "Machine Learning",
    "date": "2020-05-10",
    "url": "articles/How-to-Prepare-your-Data.html"
   },
   {
    "title": "Exploratory Data Analysis on Steroids",
-   "subtitle": "An express method for EDA in Python", 
+   "subtitle": "Accelerate your Exploratory Data Analysis (EDA) process efficiently in Python", 
    "category": "Machine Learning",
    "date": "2020-04-30",
    "url": "articles/Exploratory-Data-Analysis-on-Steroids.html"
@@ -127,7 +127,7 @@
   },
   {
    "title": "Control Structures",
-   "subtitle": "The backbone of programs", 
+   "subtitle": "Understand the essential control structures that define program flow", 
    "category": "Programming",
    "date": "2020-01-22",
    "url": "articles/Essential-Programming---Control-Structures.html"
@@ -162,7 +162,7 @@
   },
   {
    "title": "Computer Vision for Precision Agriculture",
-   "subtitle": "Making decisions based on pixels", 
+   "subtitle": "How to apply Computer Vision to make smarter decisions in agriculture", 
    "category": "Computer Vision",
    "date": "2019-01-03",
    "url": "articles/Computer-Vision-for-Precision-Agriculture.html"
