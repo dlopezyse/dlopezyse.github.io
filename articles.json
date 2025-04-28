@@ -9,13 +9,13 @@
   {
    "title": "Your Guide to Generative AI (GenAI)",
    "subtitle": "Main concepts, opportunities, risks, and the future of GenAI",
-   "category": "Machine Learning",
+   "category": "GenAI",
    "date": "2024-06-11",
    "url": "articles/Your-Guide-to-Generative-AI.html"
   },
   {
    "title": "Biomolecular Analysis with Python",
-   "subtitle": "Characterize molecules, visualize them in 2D & 3D, perform similarity analysis and get their properties",
+   "subtitle": "Characterize molecules, visualize in 2D & 3D, perform similarity analysis and get their properties",
    "category": "Machine Learning",
    "date": "2022-10-06",
    "url": "articles/Biomolecular-Analysis-with-Python.html"
