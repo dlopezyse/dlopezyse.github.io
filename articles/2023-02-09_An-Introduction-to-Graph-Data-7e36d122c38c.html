@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>An Introduction to Graph Data</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">An Introduction to Graph Data</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Our world is a complex web of connections. From molecules to genes, from people to organizations, our reality can be considered a…
+</section>
+<section data-field="body" class="e-content">
+<section name="604e" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="0610" id="0610" class="graf graf--h3 graf--leading graf--title">An Introduction to Graph Data</h3><figure name="0816" id="0816" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="0*pY8VPkak9EN_2dNj" data-width="7952" data-height="5304" src="https://cdn-images-1.medium.com/max/800/0*pY8VPkak9EN_2dNj"><figcaption class="imageCaption">Photo by <a href="https://unsplash.com/@cifilter?utm_source=medium&amp;utm_medium=referral" data-href="https://unsplash.com/@cifilter?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor" rel="photo-creator noopener" target="_blank">Shannon Potter</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" data-href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor" rel="photo-source noopener" target="_blank">Unsplash</a></figcaption></figure><p name="be8d" id="be8d" class="graf graf--p graf-after--figure">Our world is a complex web of connections. From molecules to genes, from people to organizations, our reality can be considered a connection of components. Everything is connected, meaning everything can be represented as components related to other components.</p><p name="bfc9" id="bfc9" class="graf graf--p graf-after--p">In the Machine Learning world, this representation can be done using Graphs. A Graph intends to accumulate and express knowledge of the real world, using <strong class="markup--strong markup--p-strong">nodes</strong> to represent entities of interest and <strong class="markup--strong markup--p-strong">edges</strong> to represent relations between these entities.</p><h3 name="ec3c" id="ec3c" class="graf graf--h3 graf-after--p">The anatomy of Graphs</h3><p name="a6bc" id="a6bc" class="graf graf--p graf-after--h3"><strong class="markup--strong markup--p-strong">Nodes </strong>are the <a href="https://www.freecodecamp.org/news/data-structures-101-graphs-a-visual-introduction-for-beginners-6d88f36ec768/" data-href="https://www.freecodecamp.org/news/data-structures-101-graphs-a-visual-introduction-for-beginners-6d88f36ec768/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">elements that create the network</a>. They could represent houses, locations, airports, ports, bus stops, buildings, users, and anything you could represent as being connected to similar elements in a network.</p><p name="6c39" id="6c39" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Edges </strong>are connections between the nodes. They could represent streets, flights, bus routes, a connection between two users in a social network, or anything that could represent a connection between the nodes in the context you are working with.</p><figure name="d102" id="d102" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*0z6Vy0vkouZL4aKr.png" data-width="448" data-height="157" src="https://cdn-images-1.medium.com/max/800/0*0z6Vy0vkouZL4aKr.png"><figcaption class="imageCaption">Node A and Node B here are two different entities. These nodes are connected by an edge that represents the relationship between the two nodes. Source <a href="https://www.analyticsvidhya.com/blog/2019/10/how-to-build-knowledge-graph-text-using-spacy/" data-href="https://www.analyticsvidhya.com/blog/2019/10/how-to-build-knowledge-graph-text-using-spacy/" class="markup--anchor markup--figure-anchor" rel="noopener" target="_blank">Analytics Vidhya</a></figcaption></figure><p name="bfb0" id="bfb0" class="graf graf--p graf-after--figure">Nodes and edges are diverse, and they may represent physical networks such as electrical circuits, roadways, or organic molecules. They can also represent less tangible interactions like ecosystems, sociological relationships, databases, or a control flow in a computer program.</p><blockquote name="c85e" id="c85e" class="graf graf--pullquote graf-after--p">Graphs are a simple but powerful way of describing how things connect.</blockquote><p name="988f" id="988f" class="graf graf--p graf-after--pullquote"><strong class="markup--strong markup--p-strong">A triple</strong> is the <a href="https://www.altexsoft.com/blog/knowledge-graph/" data-href="https://www.altexsoft.com/blog/knowledge-graph/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">most basic knowledge graph model</a> you can build with two nodes and one edge explaining their connection. Often, the triple is shown as either “subject-predicate-subject” or “subject-predicate-object.” That is, an entity (subject) can be associated with another entity or with a simple value (an object) through some property (a predicate). For example, the triple “Columbia University is located in NYC” connects the subject “Columbia University” and the object “NYC” using the “located in” predicate.</p><p name="4ec6" id="4ec6" class="graf graf--p graf-after--p">Whatsmore, nodes and relationships can have <strong class="markup--strong markup--p-strong">labels</strong>, and nodes also can have <strong class="markup--strong markup--p-strong">attributes</strong> (or properties). Another way to view nodes, relationships, and attributes is through grammar. A node is a noun. A relationship is a verb. Attributes for nouns are like adjectives, and attributes for relationships are like adverbs.</p><figure name="3c76" id="3c76" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="0*GXfs4R6Y4TNZ9oLm.png" data-width="1024" data-height="665" src="https://cdn-images-1.medium.com/max/800/0*GXfs4R6Y4TNZ9oLm.png"><figcaption class="imageCaption">An example of a triple viewed through grammar. Source: <a href="https://contentrules.com/knowledge-graphs-a-quick-start-for-content-professionals/" data-href="https://contentrules.com/knowledge-graphs-a-quick-start-for-content-professionals/" class="markup--anchor markup--figure-anchor" rel="noopener" target="_blank">Content Rules</a></figcaption></figure><p name="5cd9" id="5cd9" class="graf graf--p graf-after--figure">This way, <strong class="markup--strong markup--p-strong">nodes</strong> that represent entities can:</p><ul class="postList"><li name="87d9" id="87d9" class="graf graf--li graf-after--p">Contain zero or more properties, key-value pairs representing entity data such as price or date of birth.</li><li name="974a" id="974a" class="graf graf--li graf-after--li">Have zero or more labels, which declare the node’s purpose in the graph, such as representing customers or products.</li></ul><p name="0f67" id="0f67" class="graf graf--p graf-after--li"><strong class="markup--strong markup--p-strong">Edges</strong> that represent how entities interrelate:</p><ul class="postList"><li name="ac34" id="ac34" class="graf graf--li graf-after--p">Have a type, such as bought or liked.</li><li name="0a0d" id="0a0d" class="graf graf--li graf-after--li">Have a direction going from one node to another (or back to the same node).</li><li name="45dc" id="45dc" class="graf graf--li graf-after--li">Can contain zero or more properties, which are key-value pairs representing some characteristic of the link, such as a timestamp or distance.</li><li name="1040" id="1040" class="graf graf--li graf-after--li">Never dangle: there is always a start and end node (which can be the same node).</li></ul><p name="02fb" id="02fb" class="graf graf--p graf-after--li">Nodes, relationships, properties, and rules can be used to assemble sophisticated, high-fidelity graph data models.</p><h3 name="b6aa" id="b6aa" class="graf graf--h3 graf-after--p">Improving information discovery</h3><p name="8199" id="8199" class="graf graf--p graf-after--h3">Finding connections between data points is a natural and powerful way of making information discoveries. Graphs and graph theory are amazing tools in their own right for modeling and analyzing data.</p><blockquote name="9858" id="9858" class="graf graf--pullquote graf-after--p">Graph data models can uniquely represent complex, indirect relationships in a way that is both human-readable and machine friendly.</blockquote><p name="9302" id="9302" class="graf graf--p graf-after--pullquote graf--trailing">Contrary to relational databases, a <a href="https://neo4j.com/developer/graph-database/" data-href="https://neo4j.com/developer/graph-database/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">graph database stores</a> nodes and relationships instead of tables or documents. Data is stored without restricting it to a pre-defined model, allowing a very flexible way of thinking about and using it.</p></div></div></section><section name="c5c2" class="section section--body"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="a5af" id="a5af" class="graf graf--h3 graf--leading">References</h3><ul class="postList"><li name="1984" id="1984" class="graf graf--li graf-after--h3">Handbook of Graph Theory (Gross, Yellen, Zhang)</li><li name="4a8b" id="4a8b" class="graf graf--li graf-after--li graf--trailing">Knowledge Graphs (Barrasa, Hodler, Webber)</li></ul></div></div></section><section name="a547" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><blockquote name="cc88" id="cc88" class="graf graf--blockquote graf--leading graf--trailing"><em class="markup--em markup--blockquote-em">Interested in these topics? Follow me on </em><a href="https://www.linkedin.com/in/lopezyse/" data-href="https://www.linkedin.com/in/lopezyse/" class="markup--anchor markup--blockquote-anchor" rel="noopener ugc nofollow noopener noopener" target="_blank"><em class="markup--em markup--blockquote-em">Linkedin</em></a><em class="markup--em markup--blockquote-em"> or </em><a href="https://twitter.com/lopezyse" data-href="https://twitter.com/lopezyse" class="markup--anchor markup--blockquote-anchor" rel="noopener ugc nofollow noopener noopener" target="_blank"><em class="markup--em markup--blockquote-em">Twitter</em></a></blockquote></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@lopezyse" class="p-author h-card">Diego Lopez Yse</a> on <a href="https://medium.com/p/7e36d122c38c"><time class="dt-published" datetime="2023-02-09T22:09:31.498Z">February 9, 2023</time></a>.</p><p><a href="https://medium.com/@lopezyse/your-guide-to-graphs-7e36d122c38c" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 28, 2025.</p></footer></article></body></html>
