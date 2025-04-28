@@ -21,7 +21,7 @@
    "url": "articles/The-problem-of-Simplification-in-Natural-Language-Processing--NLP.html"
   },
   {
-   "title": "NLP | Text Vectorization",
+   "title": "Text Vectorization",
    "subtitle": "How machines turn text into numbers to perform calculations",
    "category": "NLP",
    "date": "2021-07-03",
@@ -29,120 +29,140 @@
   },
   {
    "title": "Your Guide to Perceptrons",
+   "subtitle": "The building blocks of Deep Learning",
    "category": "Machine Learning",
    "date": "2021-03-03",
    "url": "articles/Your-guide-to-Perceptrons.html"
   },
   {
    "title": "Text Normalization for Natural Language Processing (NLP)",
+   "subtitle": "Stemming and lemmatization with Python", 
    "category": "NLP",
    "date": "2021-02-17",
    "url": "articles/Text-Normalization-for-Natural-Language-Processing--NLP.html"
   },
   {
    "title": "How to Begin Your NLP Journey",
+   "subtitle": "Learn how to process text using Python", 
    "category": "NLP",
    "date": "2021-01-26",
    "url": "articles/How-to-Begin-Your-NLP-Journey.html"
   },
   {
    "title": "The Illusion of Choice",
+   "subtitle": "This is how your digital behaviour is designed", 
    "category": "AI & Society",
    "date": "2020-09-17",
    "url": "articles/The-illusion-of-choice.html"
   },
   {
    "title": "AI Has Become So Human That You Can't Tell the Difference",
+   "subtitle": "The truth about machines, and their ability to blend with us", 
    "category": "AI & Society",
    "date": "2020-09-17",
    "url": "articles/AI-Has-Become-So-Human--That-You-Can-t-Tell-the-Difference.html"
   },
   {
    "title": "The Secret Weapons of Fake News",
+   "subtitle": "Exploiting erroneous facts and cognitive biases to manipulate audiences", 
    "category": "AI & Society",
    "date": "2020-09-15",
    "url": "articles/The-Secret-Weapons-of-Fake-News.html"
   },
   {
    "title": "Your Guide to Linear Regression Models",
+   "subtitle": "Explaining & programming Linear Regression models in Python", 
    "category": "Machine Learning",
    "date": "2020-09-08",
    "url": "articles/Your-Guide-to-Linear-Regression-Models.html"
   },
   {
    "title": "Algorithms of Social Manipulation",
+   "subtitle": "How tech companies influence our decisions on where to click, spend, and more", 
    "category": "AI & Society",
    "date": "2020-09-05",
    "url": "articles/Algorithms-of-Social-Manipulation.html"
   },
   {
    "title": "Modelling Regression Trees",
+   "subtitle": "How to program this classic Machine Learning algorithm (Python)", 
    "category": "Machine Learning",
    "date": "2020-06-16",
    "url": "articles/Modelling-Regression-Trees.html"
   },
   {
    "title": "Modelling Classification Trees",
+   "subtitle": "How to program one of the most popular machine learning algorithms (Python)", 
    "category": "Machine Learning",
    "date": "2020-05-19",
    "url": "articles/Modelling-Classification-Trees.html"
   },
   {
    "title": "How to Prepare your Data",
+   "subtitle": "Structuring, cleaning, and enriching raw data", 
    "category": "Machine Learning",
    "date": "2020-05-10",
    "url": "articles/How-to-Prepare-your-Data.html"
   },
   {
    "title": "Exploratory Data Analysis on Steroids",
+   "subtitle": "An express method for EDA in Python", 
    "category": "Machine Learning",
    "date": "2020-04-30",
    "url": "articles/Exploratory-Data-Analysis-on-Steroids.html"
   },
   {
    "title": "Before Probability Distributions",
+   "subtitle": "Why do we use probability distributions, and why do they matter?",
    "category": "Machine Learning",
    "date": "2020-03-16",
    "url": "articles/Before-Probability-Distributions.html"
   },
   {
-   "title": "Essential-Programming | Sorting Algorithms",
+   "title": "Sorting Algorithms",
+   "subtitle": "A guide to a fundamental programming tool", 
    "category": "Programming",
    "date": "2020-01-23",
    "url": "articles/Essential-Programming---Sorting-Algorithms.html"
   },
   {
-   "title": "Essential Programming | Control Structures",
+   "title": "Control Structures",
+   "subtitle": "The backbone of programs", 
    "category": "Programming",
    "date": "2020-01-22",
    "url": "articles/Essential-Programming---Control-Structures.html"
   },
   {
-   "title": "Essential Programming | Time Complexity",
+   "title": "Time Complexity",
+   "subtitle": "How to measure the efficiency of algorithms", 
    "category": "Programming",
    "date": "2020-01-17",
    "url": "articles/Essential-Programming---Time-Complexity.html"
   },
   {
    "title": "The Complete Guide to Decision Trees",
+   "subtitle": "Everything you need to know about a top algorithm in Machine Learning", 
    "category": "Machine Learning",
    "date": "2019-04-17",
    "url": "articles/The-Complete-Guide-to-Decision-Trees.html"
   },
   {
    "title": "The Anatomy of K-means",
+   "subtitle": "A complete guide to K-means clustering algorithm", 
    "category": "Machine Learning",
    "date": "2019-02-21",
    "url": "articles/The-Anatomy-of-K-means.html"
   },
   {
    "title": "Your Guide to Natural Language Processing (NLP)",
+   "subtitle": "How machines process and understand human language", 
    "category": "NLP",
    "date": "2019-01-15",
    "url": "articles/Your-Guide-to-Natural-Language-Processing-NLP.html"
   },
   {
    "title": "Computer Vision for Precision Agriculture",
+   "subtitle": "Making decisions based on pixels", 
    "category": "Computer Vision",
    "date": "2019-01-03",
    "url": "articles/Computer-Vision-for-Precision-Agriculture.html"
