@@ -1,6 +1,6 @@
-# System Zero
+# System One
 
-Welcome to [System Zero](https://dlopezyse.github.io/), my blog exploring AI, Machine Learning, NLP, Graph Theory, and more. Built with a clean aesthetic, this site is designed for those who want to dive into AI topics.  
+Welcome to [System One](https://dlopezyse.github.io/), my blog exploring AI, Machine Learning, NLP, Graph Theory, and more. Built with a clean aesthetic, this site is designed for those who want to dive into AI topics.  
 
 ## 🚀 Features  
 ✔ **Dynamic Article Filtering** – Just browse your topic of preference.  
