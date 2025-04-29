@@ -16,21 +16,21 @@
   {
    "title": "Make Interactive Knowledge Graphs with Python",
    "subtitle": "Create an interactive knowledge graph using NetworkX and Plotly, and explore different layouts",
-   "category": "Machine Learning",
+   "category": "Graphs",
    "date": "2023-08-23",
    "url": "articles/Make-Interactive-Knowledge-Graphs-with-Python.html"
   },
     {
    "title": "Knowledge Graphs from scratch with Python",
    "subtitle": "Learn how to create a Knowledge Graph, analyze it, and train Embedding models",
-   "category": "Machine Learning",
+   "category": "Graphs",
    "date": "2023-08-17",
    "url": "articles/Knowledge-Graphs-from-scratch-with-Python.html"
   },
     {
    "title": "Your Guide to Knowledge Graphs",
    "subtitle": "Understand how Knowledge Graphs model and connect complex data",
-   "category": "Machine Learning",
+   "category": "Graphs",
    "date": "2023-08-14",
    "url": "articles/Your-Guide-to-Knowledge-Graphs.html"
   },
@@ -44,7 +44,7 @@
     {
    "title": "An Introduction to Graph Data",
    "subtitle": "Learn how graph structures model connections, links, and networks",
-   "category": "Machine Learning",
+   "category": "Graphs",
    "date": "2023-02-09",
    "url": "articles/An-Introduction-to-Graph-Data.html"
   },
