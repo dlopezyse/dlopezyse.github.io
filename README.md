@@ -1,4 +1,4 @@
-# The Artificial Forest
+# 🌲 The Artificial Forest
 
 Welcome to the [Artificial Forest](https://dlopezyse.github.io/), my blog exploring AI, Machine Learning, NLP, Graph Theory, and more. Built with a clean aesthetic, this site is designed for those who want to dive into AI topics.  
 
